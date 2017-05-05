@@ -1,7 +1,7 @@
 ---
 title: ShapeTextView
 photos:
-  - 'http://oi2uynp9t.bkt.clouddn.com/IMG_18.JPG-blog'
+  - 'http://oi2uynp9t.bkt.clouddn.com/IMG_19.JPG-blog'
 date: 2017-05-04 13:46:22
 tags: [Android,自定义view]
 ---
