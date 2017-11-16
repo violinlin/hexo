@@ -10,6 +10,8 @@ author: violin
 language: zh-Hans
 timezone:
 
+
+
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://yoursite.com
@@ -64,6 +66,13 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
+
+# 搜索服务
+search: 
+path: search.xml
+field: post
+format: html
+limit: 10000
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

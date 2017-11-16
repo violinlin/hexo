@@ -11,6 +11,7 @@ tags: [Android,MD]
 <!--more-->
 
 ## 1. 沉浸模式的应用
+[沉浸模式](https://developer.android.com/training/system-ui/immersive.html#sticky)
 Android 4.4(API 19) 以上支持了沉浸模式`IMMERSIVE MODE` 可以让布局在整个手机屏幕上显示，隐藏掉系统栏。一般游戏、图片预览、电影等app都会使用这种模式。这里做一个图片预览的简单应用。
 
 ### 1.1 在主题文件中设置系统栏透明

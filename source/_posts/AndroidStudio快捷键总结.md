@@ -5,17 +5,17 @@ tags: [Android,AndroidStudio]
 photos:
 - http://7xvvky.com1.z0.glb.clouddn.com/picture/picture6.jpg
 ---
-> 开发过程中熟练使用快捷键可以提高我们的效率还有我们的逼格。AS中提供了很多的快捷方式，我也在探索学习中，这里和大家分享一下我在开发中经常使用的快捷键，大家有好用的也可以推荐。** 此篇不定期更新 **
-
-<!-- more -->
+> 开发过程中熟练使用快捷键可以提高我们的效率还有我们的逼格。AS中提供了很多的快捷方式，我也在探索学习中，这里和大家分享一下我在开发中经常使用的快捷键，大家有好用的也可以推荐。mac系统使用将`control`替换成`cmd`键** 此篇不定期更新 **
 
 当初信誓旦旦说每周都写点东西，结果... ,哎！人总是想偷懒的。
+
+<!--more-->
 
 ## 编辑部分
 
 ### 代码的整行复制`control+D`和删除`control+Y`
 
-通常我们可以通过`shift+home`或者`shift+end`来选中整行代码，再进行操作。`control+D`和`control+Y`可以快速的复制或者删除整行代码，在开发中使用还是比较多的。
+通常我们可以通过`shift+home`或者`shift+end`来选中整行代码，再进行操作。`control+D`和`control+Y`可以快速的复制或者删除整行代码，在开发中使用还是比较多的。mac是
 
 ![整行复制和删除](http://upload-images.jianshu.io/upload_images/2352140-c693e19031b56d4b.gif?imageMogr2/auto-orient/strip)
 
@@ -41,7 +41,7 @@ photos:
 
 ## 窗口部分
 
-### 查看当前类的方法大纲`control+F12`
+### 查看当前类的方法大纲`control+F12`、`cmd+F12`
 
 弹窗显示当前类中的方法和变量，便于了解该类的结构
 
@@ -54,6 +54,13 @@ photos:
 
 ![类的继承树](http://upload-images.jianshu.io/upload_images/2352140-efd00fe725415a8a.gif?imageMogr2/auto-orient/strip)
 
+### 重载父类的方法` Mac:control + o/Win:ctrl + o`
+
+![](http://upload-images.jianshu.io/upload_images/1529568-a714f71ee3770a5a.gif?imageMogr2/auto-orient/strip)
+
+### 切换文件窗口`Mac : control + tab/ win: ctrl + tab`
+
+![](http://upload-images.jianshu.io/upload_images/1529568-0138bef23f2ea38b.gif?imageMogr2/auto-orient/strip)
 ## 查找部分
 
 ### 类名查找`control+N`和文件名查找`control+shift+N`
