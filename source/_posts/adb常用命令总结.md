@@ -6,7 +6,10 @@ date: 2016-09-08 10:58:08
 tags: [adb,Android]
 ---
 > 总结常用的adb命令
+
+
 <!--more-->
+
 ## adb服务的开启与关闭
 
 ```
@@ -30,25 +33,65 @@ adb install [apk 所在目录]
 ```
 adb shell cat /sys/class/net/wlan0/address
 ```
-## 查看文件
- 1. 进入手机命令
+## 指定目标设备
+```
+adb -s 'serialNumber' 
+adb -d 指定当前唯一通过USB连接的Android设备
+adb -e 指定当前唯一运行的虚拟设备
+```
+
+## 进入手机
 
 ```
 adb shell
-adb -s '设备信息' shell //指定机型操作
+
 ```
-2. 切换到指定目录
+## 切换到指定目录
 
 ```
 cd data/data/包名/shared_prefs
 ls 查看当前目录下的文件
 ```
 
-3. 查看文件
- 
+## 查看相应包名的清单信息
 ```
-cat 文件名称
+adb shell dumpsys package[pkname]
 ```
+## 安装应用
+```
+adb install [-lrtsdg] [apk 路径]
+```
+| 参数 | 作用 |
+|--------|--------|
+|   -l     |  将应用安装到保护目录/mnt/asec      |
+|   -r     |  允许覆盖安装      |
+|   -t     |  允许安装 AndroidManifest.xml 里 application 指定 android:testOnly="true" 的应用      |
+|   -s     |  将应用安装到sdcard      |
+|   -d     |  允许覆盖降级安装     |
+|   -g     |  授予所有运行时权限     |
+
+## 卸载应用
+```
+adb uninstall [pkname]
+```
+## 将设备文件拖到本地
+```
+adb pull [手机文件目录] [电脑文件目录]
+```
+## 将本地文件拖到设备
+```
+adb push [电脑文件路径] [手机文件目录]
+```
+## 清空应用缓存
+```
+adb shell pm clear  [pkname]
+```
+## 查看debug包的沙盒数据
+```
+adb shell
+run-as [pkname]
+```
+
 ## 获取屏幕的分辨率
 
 ```
@@ -64,9 +107,25 @@ adb shell pm list packages -s//获取系统应用
 adb shell pm list packages -3//第三方应用
 adb shell pm list packages '过滤字段'
 ```
-##  向手机发送文件
+##  传输文件
 
 ```
 adb push <要发送的文件路径>  <发送到的路径>
 adb push test.text  sdcard/Movies
+```
+## 屏幕截图
+
+```
+
+// 截屏并保存到电脑的当前目录
+adb exec-out screencap -p > picture_name.png
+
+// 截屏并保存到当前设备
+adb shell screencap -p /sdcard/sc.png 
+
+```
+## 模拟屏幕滑动
+
+```
+adb shell input swipe [startX、startY、endX、endY、durationTime(ms)]
 ```
