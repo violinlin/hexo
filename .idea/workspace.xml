@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75b84b89-b8e6-48bf-a0b1-598b823d1ca4" name="Default" comment="布局优化添加、bitmap标签图片拉伸问题添加">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_posts/RoundImageView.md" />
+    <list default="true" id="75b84b89-b8e6-48bf-a0b1-598b823d1ca4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scaffolds/post.md" afterPath="$PROJECT_DIR$/scaffolds/post.md" />
     </list>
     <ignored path="hexo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -352,7 +350,7 @@
       <workItem from="1519892565409" duration="1205000" />
       <workItem from="1520997695485" duration="1432000" />
       <workItem from="1521095885805" duration="9186000" />
-      <workItem from="1521188924940" duration="112000" />
+      <workItem from="1521188924940" duration="137000" />
     </task>
     <task id="LOCAL-00001" summary="新文件添加">
       <created>1510814090994</created>
@@ -382,11 +380,18 @@
       <option name="project" value="LOCAL" />
       <updated>1517995515052</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="RoundImageView文章修改">
+      <created>1521189056048</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1521189056048</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12790000" />
+    <option name="totallyTimeSpent" value="12815000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="27" width="1244" height="777" extended-state="0" />
@@ -429,7 +434,8 @@
     <MESSAGE value="忽略添加" />
     <MESSAGE value="默认图片修改" />
     <MESSAGE value="布局优化添加、bitmap标签图片拉伸问题添加" />
-    <option name="LAST_COMMIT_MESSAGE" value="布局优化添加、bitmap标签图片拉伸问题添加" />
+    <MESSAGE value="RoundImageView文章修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="RoundImageView文章修改" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -613,6 +619,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor>
             <js_state />
@@ -623,6 +630,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="60">
             <caret line="4" column="53" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="53" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -654,6 +662,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -897,6 +906,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor>
             <js_state />
@@ -907,6 +917,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="60">
             <caret line="4" column="53" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="53" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -916,6 +927,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
