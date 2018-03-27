@@ -70,6 +70,13 @@ adb install [-lrtsdg] [apk 路径]
 |   -d     |  允许覆盖降级安装     |
 |   -g     |  授予所有运行时权限     |
 
+如果包的签名咩有问题，在部分机器（如Lenovo K920）上扔会遇到`[INSTALL_FAILED_VERIFICATION_FAILURE]`安装失败的情况。解决方法如下：
+1. 将安装包复制到手机安装目录 `adb push [xx.apk] /data/local/tmp/xx`
+2. 安装apk `adb shell pm install /data/local/tmp/xx`
+
+
+
+
 ## 卸载应用
 ```
 adb uninstall [pkname]
