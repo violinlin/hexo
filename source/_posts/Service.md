@@ -3,7 +3,7 @@ title: Service
 photos:
   - 'http://oi2uynp9t.bkt.clouddn.com/IMG_53.JPG-blog'
 date: 2016-09-18 23:13:58
-tags: [Android基础、、Service]
+tags: [Android基础,Service]
 categories: [Android]
 ---
 >**认识Service** 

@@ -48,21 +48,27 @@ String summary = "<html><body>You scored <b>192</b> points.</body></html>";
 
 ## 2.WebSettings
 
+> 下面的设置满足大多数情况下的WebView设置，注意的是'webSettings.setJavaScriptEnabled(true)'需要设置为true,除非界面是完全的静态界面不包含js代码，不然客户端加载网页会失败。
+
 ```java
- WebSettings webSettings = webView.getSettings();
-        webSettings.setJavaScriptEnabled(true);//设置webview支持js脚本
-        webSettings.setLoadsImagesAutomatically(true);//支持自动加载图片
-
-        //设置自适应屏幕，两者合用
-        webSettings.setUseWideViewPort(true); //将图片调整到适合webview的大小
-        webSettings.setLoadWithOverviewMode(true); // 缩放至屏幕的大小
-
-        //缩放操作
-        webSettings.setSupportZoom(true); //支持缩放，默认为true。是下面那个的前提。
-        webSettings.setBuiltInZoomControls(true); //设置内置的缩放控件。若为false，则该WebView不可缩放
-        webSettings.setDisplayZoomControls(false); //隐藏原生的缩放控件
+  WebSettings webSettings = webView.getSettings();
+         webSettings.setCacheMode(WebSettings.LOAD_NO_CACHE);//缓存模式，不加载缓存
+         webSettings.setJavaScriptEnabled(true);// 网页支持JS脚本
+         webView.getSettings().setDomStorageEnabled(true);// 开启DOM storage API 功能
+         //允许混合内容 解决部分(5.0以上)手机 加载不出https请求里面的http的图片
+         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+             webSettings.setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
+         }
+ 
+         //设置自适应屏幕，两者合用
+         webSettings.setUseWideViewPort(true); //将图片调整到适合webview的大小
+         webSettings.setLoadWithOverviewMode(true); // 缩放至屏幕的大小
+ //
+ //        //缩放操作
+         webSettings.setSupportZoom(true); //支持缩放，默认为true。是下面那个的前提。
+         webSettings.setBuiltInZoomControls(true); //设置内置的缩放控件。若为false，则该WebView不可缩放
+         webSettings.setDisplayZoomControls(false); //隐藏原生的缩放控件
 ```
-
 
 
 
@@ -107,6 +113,7 @@ var text="js 调用 Java";
 
 > 1. 该方法的执行不会使页面刷新，而第一种方法（loadUrl ）的执行则会
 > 2. Android 4.4 后才可使用
+
 ```
 mWebView.evaluateJavascript（"javascript:callJS(\"Java 调用 JS \")", new ValueCallback<String>() {
         @Override
@@ -118,7 +125,7 @@ mWebView.evaluateJavascript（"javascript:callJS(\"Java 调用 JS \")", new Valu
 
 ### 3.2 JS调用Java代码
 
-定义JS和Java的接口类
+> 定义JS和Java的接口类, 需要在方法上面添加`@JavascriptInterface`注释
 
 ```java
 //js和java的接口定义
@@ -134,15 +141,125 @@ mWebView.evaluateJavascript（"javascript:callJS(\"Java 调用 JS \")", new Valu
         }
     }
 ```
-添加JS交互接口
+> 添加JS交互接口,下面'android'为定义的接口名称，字段可以自定义
 
 ```java
  webView.addJavascriptInterface(new JsInteration(), "android");
 ```
-JS的调用方法
+> JS的调用方法,语法为`window.接口名.方法名(参数)`，接口名为上面定义的字段'android'。方法调用如下。
 
 ```javascript
  function showToastMessage() {
         window.android.showToastMessage(text)
     }
 ```
+### 4.WebChromeClient的常用设置
+
+> WebChromeClient是辅助WebView处理Javascript的对话框，网站图标，网站title，加载进度等.
+
+监听网页加载进图，更新进度条
+```java
+ WebChromeClient chromeClient = new WebChromeClient() {
+            @Override
+            public void onProgressChanged(WebView view, int newProgress) {
+                super.onProgressChanged(view, newProgress);
+                progressBar.setProgress(newProgress);
+
+            }
+        };
+
+ webView.setWebChromeClient(chromeClient);
+```
+
+### 5.WebViewClient的常用设置
+
+```java
+ WebViewClient client = new WebViewClient() {
+            @Override
+            public void onPageStarted(WebView view, String url, Bitmap favicon) {
+                super.onPageStarted(view, url, favicon);
+                progressBar.setVisibility(View.VISIBLE);
+                Log.d(TAG, "onPageStarted");
+                if (mListener != null) {
+                    mListener.onPageStart(url);
+                }
+            }
+
+            @Override
+            public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
+                handler.proceed(); // 加载https自签名网站错误处理 例如https://www.12306.cn/mormhweb/
+            }
+
+            @Override
+            public void onPageFinished(WebView view, String url) {
+
+                super.onPageFinished(view, url);
+                Log.d(TAG, "onPageFinished");
+                progressBar.setVisibility(View.GONE);
+                if (mListener != null) {
+                    mListener.onPageFinish(url);
+                }
+
+            }
+
+            @Override
+            public void onReceivedError(WebView view, WebResourceRequest request, WebResourceError error) {
+                super.onReceivedError(view, request, error);
+                Log.d(TAG, "onReceivedError");
+                if (mListener != null) {
+                    mListener.onPageError();
+                }
+            }
+
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView webView, String s) {
+            // 有些网页有拨打电话，打开第三方应用等的一些功能，如果有这种需求需要拦截请求地址，如果不是http
+            、或者https协议，将请求交给系统处理。
+
+                Log.d(TAG, "OverrideUrl: " + URLDecoder.decode(s));
+                if (s.startsWith("http://") || s.startsWith("https://")) {
+                    webView.loadUrl(s);
+                } else {
+                    try {
+                        Uri uri = Uri.parse(s);
+                        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                        getContext().startActivity(intent);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+
+                }
+                return true;
+
+            }
+        };
+
+```
+
+### 6.清除界面
+
+```
+ private void clearWebView() {
+        if (webView != null) {
+            webView.loadUrl("about:blank");
+            webView.removeAllViews();
+            webView.destroy();
+        }
+    }
+```
+
+### 7.其他设置
+
+#### 7.1拦截下载链接
+
+```
+  webView.setDownloadListener(new DownloadListener() {
+            @Override
+            public void onDownloadStart(String url, String userAgent, String contentDisposition, String mimetype, long contentLength) {
+                // TODO 拦截下载请求
+
+            }
+        });
+```
+
+
