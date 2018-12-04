@@ -153,7 +153,7 @@ mWebView.evaluateJavascript（"javascript:callJS(\"Java 调用 JS \")", new Valu
         window.android.showToastMessage(text)
     }
 ```
-### 4.WebChromeClient的常用设置
+## 4.WebChromeClient的常用设置
 
 > WebChromeClient是辅助WebView处理Javascript的对话框，网站图标，网站title，加载进度等.
 
@@ -171,7 +171,7 @@ mWebView.evaluateJavascript（"javascript:callJS(\"Java 调用 JS \")", new Valu
  webView.setWebChromeClient(chromeClient);
 ```
 
-### 5.WebViewClient的常用设置
+## 5.WebViewClient的常用设置
 
 ```java
  WebViewClient client = new WebViewClient() {
@@ -236,7 +236,7 @@ mWebView.evaluateJavascript（"javascript:callJS(\"Java 调用 JS \")", new Valu
 
 ```
 
-### 6.清除界面
+## 6.清除界面
 
 ```
  private void clearWebView() {
@@ -248,9 +248,9 @@ mWebView.evaluateJavascript（"javascript:callJS(\"Java 调用 JS \")", new Valu
     }
 ```
 
-### 7.其他设置
+## 7.其他设置
 
-#### 7.1拦截下载链接
+### 7.1拦截下载链接
 
 ```
   webView.setDownloadListener(new DownloadListener() {
@@ -261,5 +261,78 @@ mWebView.evaluateJavascript（"javascript:callJS(\"Java 调用 JS \")", new Valu
             }
         });
 ```
+## WebView 的缓存问题
+
+### 数据缓存
+
+> 数据缓存分为AppCache和DOM Storage两种
+
+#### AppCache
+
+> 我们能够有选择的缓冲web浏览器中所有的东西，从页面、图片到脚本、css等等。 
+尤其在涉及到应用于网站的多个页面上的CSS和JavaScript文件的时候非常有用。其大小目前通常是5M。 
+在Android上需要手动开启（setAppCacheEnabled），并设置路径（setAppCachePath）和容量 
+（setAppCacheMaxSize），而Android中使用ApplicationCache.db来保存AppCache数据！
+
+```
+ webView.getSettings().setAppCacheMaxSize(1024*1024*8);
+        String appCachePath = getContext().getApplicationContext().getCacheDir().getAbsolutePath();
+        webView.getSettings().setAppCachePath(appCachePath);
+        webView.getSettings().setAppCacheEnabled(true);
+```
+### DOM Storage
+
+> 存储一些简单的用key/value对即可解决的数据，根据作用范围的不同，有Session 
+Storage和Local Storage两种，分别用于会话级别的存储（页面关闭即消失）和本地化存储（除非主动 
+删除，否则数据永远不会过期）在Android中可以手动开启DOM Storage（setDomStorageEnabled）， 
+设置存储路径（setDatabasePath）Android中Webkit会为DOMStorage产生两个文件（my_path/localstorage/http_blog.csdn.net_0.localstorage和my_path/Databases.db)
+
+```
+  // 开启DOM storage API 功能
+        webView.getSettings().setDomStorageEnabled(true);
+```
+
+## 常见问题
+
+### 加载带有js脚本的网页失败
+
+webSettings.setJavaScriptEnabled(true);
+设置WebView支持JS,如果不开启的话一些包含JS的网页可能会打开失败，例如[百度](https://www.baidu.com/)、[简书](https://www.jianshu.com/)。另外网页中的JS方法也会不响应。
+
+### 下载链接点击无反应
+
+> 需要自己实现DownLoadListener
+
+```
+webView.setDownloadListener(new DownloadListener() {
+            @Override
+            public void onDownloadStart(String url, String userAgent, String contentDisposition, String mimetype, long contentLength) {
+                Uri uri = Uri.parse(url);
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
+        });
+```
+### 加载https网站失败
+
+> WebView加载自签名的https链接失败
+需要在`WebViewClient`中重写下面方法
+
+```
+          @Override
+            public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
+                handler.proceed(); // 加载https的不安全网站处理 例如https://www.12306.cn/mormhweb/
+            }
+```
+
+### 使用了`Local Storage`存储的网页加载失败
+
+> 如果网页使用了`Local Storage`存储，如果设置中没给与相应权限，界面会加载空白
+
+```
+  // 开启DOM storage API 功能
+        webView.getSettings().setDomStorageEnabled(true);
+```
+
 
 

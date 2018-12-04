@@ -155,7 +155,7 @@ dependencies {
 ## 与应用代码共享自定义字段和资源
 
 
-> 在构建时，Gradle 将生成 BuildConfig 类，以便应用代码可以检查与当前构建有关的信息。也可以使用 buildConfigField() 函数，将自定义字段添加到 Gradle 构建配置文件的 BuildConfig 类中，然后在应用的运行时代码中访问这些值。同样，也可以使用 resValue() 添加应用资源值。[官方文档](https://developer.android.com/studio/build/gradle-tips.html)
+> 在构建时，Gradle 将生成 BuildConfig 类，以便应用代码可以检查与当前构建有关的信息。可以使用 buildConfigField() 函数，将自定义字段添加到 Gradle 构建配置文件的 BuildConfig 类中，然后在应用的运行时代码中访问这些值。同样，也可以使用 resValue() 添加应用资源值。[官方文档](https://developer.android.com/studio/build/gradle-tips.html)
 
 
 ```
@@ -166,7 +166,7 @@ android {
       // These values are defined only for the release build, which
       // is typically used for full builds and continuous builds.
       buildConfigField("String", "BUILD_TIME", "\"${minutesSinceEpoch}\"")//在BuildConfild类中生成BUILD_TIME字段
-      resValue("string", "build_time", "${minutesSinceEpoch}") // 在资源文件中生成build_time 字符串
+      resValue("string", "build_time", "${minutesSinceEpoch}") // 在资源文件中生成build_time 字符串，目录为app/build/generated/res/resValues/[flavor-name]/[buildType]/values/generated.xml
       ...
     }
     debug {
