@@ -1,7 +1,7 @@
 ---
 title: '关于shape,selector style'
 photos:
-  - 'http://7xvvky.com1.z0.glb.clouddn.com/picture/picture9.jpg'
+   - '/img/pictures/picture2.jpg'
 date: 2016-12-04 22:53:27
 tags: [Android]
 ---

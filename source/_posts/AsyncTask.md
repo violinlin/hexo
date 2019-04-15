@@ -1,7 +1,7 @@
 ---
 title: AsyncTask
 photos:
-  - 'http://oi2uynp9t.bkt.clouddn.com/IMG_29.JPG-blog'
+  - '/img/pictures/picture3.jpg'
 date: 2016-09-18 22:24:35
 tags: [Android基础]
 categories: [Android]

@@ -1,7 +1,7 @@
 ---
 title: adb常用命令总结
 photos:
-  - 'http://7xvvky.com1.z0.glb.clouddn.com/picture/picture21.jpg'
+  - '/img/pictures/picture4.jpg'
 date: 2016-09-08 10:58:08
 tags: [adb,Android]
 ---

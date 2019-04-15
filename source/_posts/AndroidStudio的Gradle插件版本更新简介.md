@@ -1,7 +1,7 @@
 ---
 title: AndroidStudio的Gradle插件版本更新简介
 photos:
-  - 'http://7xvvky.com1.z0.glb.clouddn.com/picture/picture15.jpg'
+   - '/img/pictures/picture9.jpg'
 date: 2016-09-21 13:53:50
 tags: [Android,gradle]
 ---
@@ -13,7 +13,7 @@ tags: [Android,gradle]
 
 **自动更新**
 当你更新完Android Studio,你可能收到自动更新最新版插件的弹窗通知。你可以选择接受更新，或者自己根据项目需求指定插件版本
-![](http://7xvvky.com1.z0.glb.clouddn.com/Blog/gradle/update.png)
+![](/img/update.png)
 
 
 **指定更新**
@@ -34,7 +34,7 @@ buildscript {
 ## 更新Gradle
 **自动更新**
 当你更新完Android Studio,你可能收到自动更新最新版Gralde的弹窗通知。你可以选择接受更新，或者自己根据项目需求指定Gradle版本
-![](http://7xvvky.com1.z0.glb.clouddn.com/Blog/gradle/update.png)
+![](/img/update.png)
 
 **指定更新**
 通过修改Gradle的分配引用文件`gradle/wrapper/gradle-wrapper.properties`指定Gradle版本，其实是修改了Gradle的下载链接，需要翻墙。也可以通过[这里](http://services.gradle.org/distributions)选择Gradle的版本下载，再复制到电脑的Gradle目录下。
@@ -49,7 +49,7 @@ distributionUrl = https\://services.gradle.org/distributions/gradle-2.10-all.zip
 ## 通过Project Structure修改
 也可以通过`File > Project Structure > Project`来修改修改Gradle版本`Gradle version`和插件版本`Andtoid Plugin Version `
 
-![](http://7xvvky.com1.z0.glb.clouddn.com/Blog/gradle/Project%20Structure.png)
+![](/img/Project%20Structure.png)
 
 
 > **PS:** 使用中发现AndroidStudio应该有支持最高版本的Gradle限制，例如：在Android Studio 2.0上使用Gradle2.10是不起作用的，后来更新了AS问题解决了。

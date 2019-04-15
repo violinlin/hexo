@@ -3,7 +3,7 @@ title: Banner的封装--实现ViewPager的循环轮播效果
 date: 2016-07-18 00:08:34
 tags: [Android,自定义view]
 photos:
-- http://7xvvky.com1.z0.glb.clouddn.com/picture/picture10.jpg
+ - '/img/pictures/picture5.jpg'
 ---
 # 关于Banner
 很多的项目中都需要实现Banner位滚动展示图片的效果，我这里使用了ViewPager和RadioGroup封装了一个带指示器功能的Banner视图，大家一起交流学习。

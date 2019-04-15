@@ -1,7 +1,7 @@
 ---
 title: CheckBox和RadioButton自定义图标的问题
 photos:
-  - 'http://7xvvky.com1.z0.glb.clouddn.com/picture/picture9.jpg'
+  - '/img/pictures/picture9.jpg'
 date: 2016-08-19 11:36:50
 tags: [Android,bug]
 ---

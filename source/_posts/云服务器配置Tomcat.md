@@ -1,7 +1,7 @@
 ---
 title: 云服务器配置Tomcat
 photos:
-  - 'http://oi2uynp9t.bkt.clouddn.com/IMG_28.JPG-blog'
+   - '/img/pictures/picture9.jpg'
 date: 2017-09-05 11:35:20
 tags: [Server]
 categories: [Server]

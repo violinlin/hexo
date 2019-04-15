@@ -3,7 +3,7 @@ title: AndroidStudio快捷键总结
 date: 2016-07-31 20:19:32
 tags: [Android,AndroidStudio]
 photos:
-- http://7xvvky.com1.z0.glb.clouddn.com/picture/picture6.jpg
+ - '/img/pictures/picture8.jpg'
 ---
 > 开发过程中熟练使用快捷键可以提高我们的效率还有我们的逼格。AS中提供了很多的快捷方式，我也在探索学习中，这里和大家分享一下我在开发中经常使用的快捷键，大家有好用的也可以推荐。mac系统使用将`control`替换成`cmd`键** 此篇不定期更新 **
 

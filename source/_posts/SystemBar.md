@@ -1,7 +1,7 @@
 ---
 title: SystemBar
 photos:
-  - 'http://oi2uynp9t.bkt.clouddn.com/IMG_16.JPG-blog'
+  - '/img/pictures/picture4.jpg'
 date: 2017-04-25 14:32:18
 tags: [Android,MD]
 ---
@@ -92,7 +92,7 @@ Android 4.4(API 19) 以上支持了沉浸模式`IMMERSIVE MODE` 可以让布局�
     }
 ```
 
-![效果预览](http://7xvvky.com1.z0.glb.clouddn.com/blog/sysbar/blog_sysbar.gif)
+![效果预览](/img/blog_sysbar.gif)
 
 
 

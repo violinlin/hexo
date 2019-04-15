@@ -1,7 +1,7 @@
 ---
 title: 简单聊聊Android程序的运行内存
 photos:
-  - 'http://oi2uynp9t.bkt.clouddn.com/IMG_22.JPG-blog'
+  - '/img/pictures/picture1.jpg'
 date: 2017-10-09 17:41:17
 tags: [Android扩展]
 categories:

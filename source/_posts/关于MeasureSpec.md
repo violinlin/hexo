@@ -1,7 +1,7 @@
 ---
 title: 关于MeasureSpec
 photos:
-  - 'http://oi2uynp9t.bkt.clouddn.com/IMG_24.JPG'
+   - '/img/pictures/picture1.jpg'
 date: 2016-12-04 22:49:05
 tags: [Android,自定义view]
 ---

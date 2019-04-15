@@ -1,7 +1,7 @@
 ---
 title: RoundImageView
 photos:
-  - 'http://oi2uynp9t.bkt.clouddn.com/IMG_38.JPG-blog'
+   - '/img/pictures/picture1.jpg'
 date: 2018-03-14 11:21:06
 tags: [Android,自定义view]
 categories: [Android]
@@ -181,4 +181,4 @@ mBitmapShader = new BitmapShader(mBitmap, Shader.TileMode.CLAMP, Shader.TileMode
 
 [源码地址](https://github.com/violinlin/ViolinDemo/blob/master/imageview/src/main/java/com/violin/imageview/RoundImageView.java)
 
-![RoundImageView](http://7xvvky.com1.z0.glb.clouddn.com/blog/roundimageview.png)
+![RoundImageView](/img/roundimageview.png)

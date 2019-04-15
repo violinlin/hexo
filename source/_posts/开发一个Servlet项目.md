@@ -1,7 +1,7 @@
 ---
 title: 开发一个Servlet项目
 photos:
-  - 'http://oi2uynp9t.bkt.clouddn.com/IMG_51.JPG-blog'
+  - '/img/pictures/picture8.jpg'
 date: 2018-05-18 15:01:54
 tags: [servlet]
 categories: [Server]
@@ -30,15 +30,15 @@ categories: [Server]
 
 > 创建最简单的Servlet项目，不需要引用Spring、Struts等框架
 
-![](http://7xvvky.com1.z0.glb.clouddn.com/blog/firstservlet/servlet_create.png)
+![](/img/servlet_create.png)
 
 ### 添加Tomcat依赖
 
 > 项目创建成功后，需要引入Tomcat的依赖。在Project Structure中进行如下操作
 
-![](http://7xvvky.com1.z0.glb.clouddn.com/blog/firstservlet/import_tom_jar.png)
+![](/img/import_tom_jar.png)
 
- ![](http://7xvvky.com1.z0.glb.clouddn.com/blog/firstservlet/import_tom_jar2.png)
+ ![](/img/import_tom_jar2.png)
 
 ### 完善项目配置
 
@@ -83,13 +83,13 @@ public class FirstServlet extends HttpServlet {
 > 如上，基本的项目框架已经完善。但是想让项目通过网络访问，还差最后一步，为项目配置Tomcat服务器。
 
 
-![](http://7xvvky.com1.z0.glb.clouddn.com/blog/firstservlet/deploy_tomcat1.png)
+![](/img/deploy_tomcat1.png)
 
-![](http://7xvvky.com1.z0.glb.clouddn.com/blog/firstservlet/deploy_tomcat2.png)
+![](/img/deploy_tomcat2.png)
 
-![](http://7xvvky.com1.z0.glb.clouddn.com/blog/firstservlet/deploy_tomcat3.png)
+![](/img/deploy_tomcat3.png)
 
-![](http://7xvvky.com1.z0.glb.clouddn.com/blog/firstservlet/deploy_tomcat4.png)
+![](/img/deploy_tomcat4.png)
 
 日志显示下面表示服务启动成功
 
@@ -139,6 +139,6 @@ public class FirstServlet extends HttpServlet {
 
 访问路径为：本机ip地址+8080（tomcat端口）+/firstservlet(项web.xml中`url-pattern`字段)
 
-![](http://7xvvky.com1.z0.glb.clouddn.com/blog/firstservlet/test_servlet1.png)
+![](/img/test_servlet1.png)
 
-![](http://7xvvky.com1.z0.glb.clouddn.com/blog/firstservlet/test_servlet2.png)
+![](/img/test_servlet2.png)

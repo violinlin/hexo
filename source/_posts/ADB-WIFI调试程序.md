@@ -3,7 +3,7 @@ title: ADB--WIFI调试程序
 date: 2016-07-16 20:42:54
 tags: [Android,adb]
 photos:
-- http://7xvvky.com1.z0.glb.clouddn.com/picture/picture11.jpg
+ - '/img/pictures/picture3.jpg'
 ---
 # 关于ADB
 在开发调试Android程序时我们需要通过adb工具在我们的手机和电脑之间建立连接，通常情况我们都是使用数据线，其实adb还提供了另外一种方式通过**tcpip**建立连接。这里给大家介绍两种wifi连接电脑的方法，其中第一种方法手机不用root权限。

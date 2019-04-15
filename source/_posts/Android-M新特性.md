@@ -1,7 +1,7 @@
 ---
 title: Android_M新特性
 photos:
-  - 'http://oi2uynp9t.bkt.clouddn.com/IMG_30.JPG-blog'
+   - '/img/pictures/picture5.jpg'
 date: 2016-09-18 23:03:55
 tags: [Android基础]
 categories: [Android]

@@ -1,7 +1,7 @@
 ---
 title: 关于EditText的使用技巧
 photos:
-  - 'http://oi2uynp9t.bkt.clouddn.com/IMG_22.JPG-blog'
+  - '/img/pictures/picture10.jpg'
 date: 2016-09-17 22:03:07
 tags: [Android基础]
 categories: [Android]

@@ -1,7 +1,7 @@
 ---
 title: Activity
 photos:
-  - 'http://oi2uynp9t.bkt.clouddn.com/IMG_19.JPG-blog'
+  - '/img/pictures/picture1.jpg'
 date: 2016-09-18 22:32:40
 tags: [Activity]
 categories: [Android]
@@ -11,7 +11,7 @@ categories: [Android]
 
 # Activity 生命周期
 
-![lifecycle](http://7xvvky.com1.z0.glb.clouddn.com/blog/activity/activity_lifecycle.png)
+![lifecycle](/img/activity_lifecycle.png)
 
 ## 多Activity启动生命周期
 
@@ -51,7 +51,7 @@ D/Activity: SecondActivity	onDestroy
 
 # Activity 启动模式
 
-![launch mode](http://7xvvky.com1.z0.glb.clouddn.com/blog/activity/launchmode.png)
+![launch mode](/img/launchmode.png)
 
 # onNewIntent方法的执行时机
 

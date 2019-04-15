@@ -1,7 +1,7 @@
 ---
 title: Service
 photos:
-  - 'http://oi2uynp9t.bkt.clouddn.com/IMG_53.JPG-blog'
+   - '/img/pictures/picture2.jpg'
 date: 2016-09-18 23:13:58
 tags: [Android基础,Service]
 categories: [Android]
@@ -182,7 +182,7 @@ context.bindService-->onCreat()(只执行一次)-->onBind()(只绑定一次)-->S
 | BIND_IMPORTANT&BIND_ABOVE_CLIENT  | 所绑定的Activity处于前台时，Service也处于前台BIND_ABOVE_CLIENT 指定内存很低的情况下，运行时在终止绑定的Service之前终止Activity|
 
 
-![service lifecycle](http://7xvvky.com1.z0.glb.clouddn.com/blog/service/service_lifecycle.png)
+![service lifecycle](/img/service_lifecycle.png)
 
 
 ## IntentService

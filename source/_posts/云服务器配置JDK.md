@@ -1,7 +1,7 @@
 ---
 title: 云服务器配置JDK
 photos:
-  - 'http://oi2uynp9t.bkt.clouddn.com/IMG_25.JPG-blog'
+  - '/img/pictures/picture8.jpg'
 date: 2017-09-03 00:29:45
 tags: [Server]
 categories: [Server]
@@ -30,13 +30,13 @@ wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-
 > 如果使用`wget`下载速度太慢，或者本地已经有了JDK的安装包，可以通过文件上传的方式将安装包上传到云服务器。这边我已mac为例上传问题。
 
 打开`终端`选择`新建远程连接`
-![](http://7xvvky.com1.z0.glb.clouddn.com/blog/server/upload-shell.png)
+![](/img/upload-shell.png)
 
 选择`安全文件传输`，输入服务器的IP
 
-![](http://7xvvky.com1.z0.glb.clouddn.com/blog/server/connect.png)
+![](/img/connect.png)
 输入主机名开始连接
-![](http://7xvvky.com1.z0.glb.clouddn.com/blog/server/sftp_connect.png)
+![](/img/sftp_connect.png)
 
 输入密码提示连接成功后开始上传文件
 

@@ -1,7 +1,7 @@
 ---
 title: Volley
 photos:
-  - 'http://oi2uynp9t.bkt.clouddn.com/IMG_26.JPG-blog'
+  - '/img/pictures/picture6.jpg'
 date: 2016-09-17 21:38:58
 tags: [Android基础]
 categories: [Android]

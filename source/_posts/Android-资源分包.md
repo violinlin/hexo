@@ -1,7 +1,7 @@
 layout: title
 title: Android 资源分包
 photos:
-  - 'http://7xvvky.com1.z0.glb.clouddn.com/picture/picture15.jpg'
+   - '/img/pictures/picture6.jpg'
 date: 2017-04-06 15:36:57
 tags: [Android]
 ---
@@ -39,5 +39,5 @@ sourceSets {
 * **src/main/res/mylayout**为自定义路径（文件夹标识系统自动识别）
 >  这种方式可以指定资源等文件夹，不过子文件夹得跟原来保持一致。例如图片文件放在`mylayouts/drawable`下、布局文件放在`mylayout/layout`下。
 
-![](http://7xvvky.com1.z0.glb.clouddn.com/blog/res/packandroidrespack.png)
+![](/img/packandroidrespack.png)
 

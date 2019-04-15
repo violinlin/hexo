@@ -1,7 +1,7 @@
 ---
 title: getter()模板技巧
 photos:
-  - 'http://oi2uynp9t.bkt.clouddn.com/IMG_44.JPG-blog'
+  - '/img/pictures/picture10.jpg'
 date: 2018-04-08 15:52:22
 tags: [AndroidStudio]
 categories:
@@ -28,7 +28,7 @@ categories:
 
 进入AS的`Preferences`界面，`Editor-->Code Style-->Java`,在'Name Prefix'中添加前缀字段，例如'm'
 
-![](http://7xvvky.com1.z0.glb.clouddn.com/blog/as/getter.png)
+![](/img/getter.png)
 
 重新生成'get'方法
 
@@ -67,11 +67,11 @@ categories:
 
 1. 进入生成`get`方法的弹窗界面，点击右上角进入模板编辑界面
  
- ![](http://7xvvky.com1.z0.glb.clouddn.com/blog/as/getter_select.png)
+ ![](/img/getter_select.png)
  
 2. 新建代码模板,修改模板代码如下(可以复制原来模板中的内容主要修改了`$(name){…} `中的return规则)
 
- ![](http://7xvvky.com1.z0.glb.clouddn.com/blog/as/getter_templete.png)
+ ![](/img/getter_templete.png)
  
  ```
  #if($field.modifierStatic)

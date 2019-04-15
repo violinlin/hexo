@@ -1,7 +1,7 @@
 ---
 title: 关于TextViewt的使用技巧
 photos:
-  - 'http://oi2uynp9t.bkt.clouddn.com/IMG_27.JPG-blog'
+  - '/img/pictures/picture3.jpg'
 date: 2016-09-17 22:11:53
 tags: [Android基础]
 categories: [Android]

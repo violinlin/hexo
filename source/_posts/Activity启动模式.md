@@ -1,7 +1,7 @@
 ---
 title: Activity启动模式
 photos:
-  - 'http://oi2uynp9t.bkt.clouddn.com/IMG_33.JPG-blog'
+  - '/img/pictures/picture2.jpg'
 date: 2017-11-15 17:42:14
 tags: [Activity]
 categories: [Android]
@@ -14,7 +14,7 @@ categories: [Android]
 ## 清单文件中配置启动模式`launchMode`
 [官方文档](https://developer.android.google.cn/guide/topics/manifest/activity-element.html#lmode)
 
-![launch mode](http://7xvvky.com1.z0.glb.clouddn.com/blog/activity/launchmode.png)
+![launch mode](/img/launchmode.png)
 
 ### singleTask
 

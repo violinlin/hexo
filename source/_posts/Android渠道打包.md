@@ -1,7 +1,7 @@
 ---
 title: Android渠道打包
 photos:
-  - 'http://oi2uynp9t.bkt.clouddn.com/IMG_14.JPG'
+  - '/img/pictures/picture10.jpg'
 date: 2017-04-27 17:46:32
 tags: [Android]
 ---
@@ -36,12 +36,12 @@ tags: [Android]
 ## 2. 替换渠道资源文件
 
 在`app/src`目录下创建渠道包名，例如创建`baidu`,该目录和`main`目录同级。在目录下创建`main`中对应的资源文件，在打渠道包时资源会自动进行替换。下面对应用图标做了替换。
-![enter image description here](http://7xvvky.com1.z0.glb.clouddn.com/blog/chanelAndroidChanel.png)
+![enter image description here](/img/chanelAndroidChanel.png)
 
 ## 3. 打包
 
 通过`build/Generate Signed APK` 打渠道包，可以全选，也可以打单个渠道。
 
-![enter image description here](http://7xvvky.com1.z0.glb.clouddn.com/blog/chanelandroid_chanel_pack.png)
+![enter image description here](/img/chanelandroid_chanel_pack.png)
 
 

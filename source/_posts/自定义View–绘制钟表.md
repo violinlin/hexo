@@ -3,7 +3,7 @@ title: 自定义View--绘制钟表
 date: 2016-06-27 22:28:30
 tags: [Android,自定义view]
 photos:
-- http://7xvvky.com1.z0.glb.clouddn.com/picture/picture21.jpg
+ - '/img/pictures/picture2.jpg'
 
 
 ---
@@ -234,5 +234,5 @@ View的工作流程主要包括measure、layout、draw三部分：
 ```
 
 #### 效果图
-![效果图](http://7xvvky.com1.z0.glb.clouddn.com/Blog/ClockView.gif)
+![效果图](/img/ClockView.gif)
 [Git源码下载](https://github.com/violinlin/ClockDemo.git)

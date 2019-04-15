@@ -1,7 +1,7 @@
 ---
 title: Apk的安装卸载等操作介绍
 photos:
-  - 'http://7xvvky.com1.z0.glb.clouddn.com/picture/picture18.jpg'
+   - '/img/pictures/picture1.jpg'
 date: 2016-09-19 13:45:01
 tags: [Android]
 ---

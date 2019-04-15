@@ -1,7 +1,7 @@
 ---
 title: build.gradle的常用配置
 photos:
-  - 'http://oi2uynp9t.bkt.clouddn.com/IMG_40.JPG-blog'
+  - '/img/pictures/picture6.jpg'
 date: 2018-03-26 16:27:53
 tags: [gradle]
 categories: [Android]

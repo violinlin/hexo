@@ -1,7 +1,7 @@
 ---
 title: Charles--修改返回报文
 photos:
-  - 'http://7xvvky.com1.z0.glb.clouddn.com/picture/picture12.jpg'
+  - '/img/pictures/picture7.jpg'
 date: 2016-10-23 22:49:28
 tags: [Charles,Android]
 ---
@@ -11,7 +11,7 @@ tags: [Charles,Android]
 
 <!--more-->
 
-![](http://7xvvky.com1.z0.glb.clouddn.com/blog/charles/charles-logo.png)
+![](/img/charles-logo.png)
 
 ## 通过映射方式修改
 
@@ -22,11 +22,11 @@ tags: [Charles,Android]
 
 **选中一条网络请求-->右键-->Save Response** 将返回报文保存到本地磁盘
 
-![enter image description here](http://7xvvky.com1.z0.glb.clouddn.com/blog/charles/saveResponse.png)
+![enter image description here](/img/saveResponse.png)
 
 **选中相同的请求-->右键-->Map Local** 将请求映射到刚才保存的返回报文
 
-![enter image description here](http://7xvvky.com1.z0.glb.clouddn.com/blog/charles/mapLocal.png)
+![enter image description here](/img/mapLocal.png)
 
 设置完映射之后每次该请求都会从设置的本地文件中读取并返回数据，我们可以随心所欲的修改保存的报文达到调试接口的目的。
 另外如果在开发初期，客户端和服务器端已经定义好了接口，但是服务器端还没有部署好环境。我们也可以通过这个方法把定义好的报文保存到本地，通过修改映射的方式来进行初步开发。
@@ -37,7 +37,7 @@ tags: [Charles,Android]
 
 选中要修改的请求-->右键-->Map Remote 在Map To 栏中填写要映射到的地址的一些参数。
 
-![enter image description here](http://7xvvky.com1.z0.glb.clouddn.com/blog/charles/mapRemote.png)
+![enter image description here](/img/mapRemote.png)
 
 
 
@@ -46,16 +46,16 @@ tags: [Charles,Android]
 
 首先开启断点模式，在Charles的面板上方将断点的图标点亮
 
-![enter image description here](http://7xvvky.com1.z0.glb.clouddn.com/blog/charles/duandian.png)
+![enter image description here](/img/duandian.png)
 
 设置断点，选中要修改的请求-->右键-->BreakPoints （左面出现对勾表示设置成功）。设置完成后，Charles再次抓取到该请求时会自动进入到调试模式。
 
 进入调试模式后可以修改请求报文，或者直接`Execute`进行下一步
 
-![enter image description here](http://7xvvky.com1.z0.glb.clouddn.com/blog/charles/breakPoints1.png)
+![enter image description here](/img/breakPoints1.png)
 
 请求报文发送成功后，Charles会拦截服务器返回的数据，这里可以通过`Edit Response`修改返回数据，或者`Execute`进行下一步
-![enter image description here](http://7xvvky.com1.z0.glb.clouddn.com/blog/charles/breakPoints2.png)
+![enter image description here](/img/breakPoints2.png)
 
 ## 总结
 
