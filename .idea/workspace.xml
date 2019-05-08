@@ -2,61 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db97beae-f662-4f12-bbf9-ba3ed7a89c07" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/source/img/pictures/picture1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/img/pictures/picture10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/img/pictures/picture2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/img/pictures/picture3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/img/pictures/picture4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/img/pictures/picture5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/img/pictures/picture6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/img/pictures/picture7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/img/pictures/picture8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/img/pictures/picture9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/img/java_gc_root.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/img/pictures/picture11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/img/pictures/picture12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/img/pictures/picture13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/img/pictures/picture14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/img/pictures/picture15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/img/pictures/picture16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/img/pictures/picture17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/img/pictures/picture18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/img/pictures/picture19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/img/pictures/picture20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/img/pictures/picture21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/img/pictures/picture22.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/img/pictures/picture23.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scaffolds/post.md" beforeDir="false" afterPath="$PROJECT_DIR$/scaffolds/post.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/ADB-WIFI调试程序.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/ADB-WIFI调试程序.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/AS2-3后找不到SDKManager启动按钮解决方法.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/AS2-3后找不到SDKManager启动按钮解决方法.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/AS打没签名的APK包.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/AS打没签名的APK包.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/Activity.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/Activity.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/Activity启动模式.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/Activity启动模式.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/Android-M新特性.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/Android-M新特性.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/Android-资源分包.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/Android-资源分包.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/AndroidStudio使用中遇到的问题.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/AndroidStudio使用中遇到的问题.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/AndroidStudio快捷键总结.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/AndroidStudio快捷键总结.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/AndroidStudio的Gradle插件版本更新简介.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/AndroidStudio的Gradle插件版本更新简介.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/Android渠道打包.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/Android渠道打包.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/Apk的安装卸载等操作介绍.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/Apk的安装卸载等操作介绍.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/AsyncTask.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/AsyncTask.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/Banner的封装-实现ViewPager的循环轮播效果.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/Banner的封装-实现ViewPager的循环轮播效果.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/Charles-修改返回报文.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/Charles-修改返回报文.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/Charles-抓取https报文.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/Charles-抓取https报文.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/CheckBox和RadioButton自定义图标的问题.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/CheckBox和RadioButton自定义图标的问题.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/RoundImageView.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/RoundImageView.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/Service.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/Service.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/ShapeTextView.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/ShapeTextView.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/SystemBar.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/SystemBar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/Toolbar的使用.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/Toolbar的使用.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/Volley.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/Volley.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/WebView使用总结.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/WebView使用总结.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/adb常用命令总结.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/adb常用命令总结.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/build-gradle的常用配置.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/build-gradle的常用配置.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/getter-模板技巧.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/getter-模板技巧.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/云服务器配置JDK.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/云服务器配置JDK.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/云服务器配置Tomcat.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/云服务器配置Tomcat.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/关于EditText的使用技巧.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/关于EditText的使用技巧.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/关于MeasureSpec.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/关于MeasureSpec.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/关于TextViewt的使用技巧.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/关于TextViewt的使用技巧.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/关于shape-selector-style.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/关于shape-selector-style.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/初识小程序.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/初识小程序.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/小程序-影讯.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/小程序-影讯.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/布局优化.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/布局优化.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/干货-看看Android开发者都装了什么软件.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/干货-看看Android开发者都装了什么软件.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/开发一个Servlet项目.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/开发一个Servlet项目.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/日常小总结.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/日常小总结.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/流式布局的使用.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/流式布局的使用.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/简单聊聊Android程序的运行内存.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/简单聊聊Android程序的运行内存.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/自定义View–绘制钟表.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/自定义View–绘制钟表.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/img/picture1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/img/picture10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/img/picture11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/img/picture12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/img/picture13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/img/yinghua.jpeg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -69,120 +37,117 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_posts/开发一个Servlet项目.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/_posts/面试总结.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="45">
-                <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+              <first_editor relative-caret-position="-715">
+                <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
               </first_editor>
-              <second_editor />
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_posts/日常小总结.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <entry file="file://$PROJECT_DIR$/source/_posts/Charles-抓取https报文.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="45">
-                <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-              </first_editor>
-              <second_editor />
+              <first_editor relative-caret-position="-535" />
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_posts/流式布局的使用.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="45">
-                <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_posts/简单聊聊Android程序的运行内存.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="45">
-                <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_posts/自定义View–绘制钟表.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="73">
-                <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scaffolds/page.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <entry file="file://$PROJECT_DIR$/source/_posts/Charles-修改返回报文.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
               <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scaffolds/post.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="60">
-                <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-              </first_editor>
-              <second_editor />
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_posts/小程序-影讯.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <entry file="file://$PROJECT_DIR$/source/img/launchmode.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_posts/关于MeasureSpec.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="45">
-                <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-              </first_editor>
-              <second_editor />
+              <first_editor />
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_posts/布局优化.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <entry file="file://$PROJECT_DIR$/source/_posts/Activity.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="45">
-                <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-              </first_editor>
-              <second_editor />
+              <first_editor />
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_posts/干货-看看Android开发者都装了什么软件.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <entry file="file://$PROJECT_DIR$/source/_posts/Activity启动模式.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="45">
-                <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-              </first_editor>
-              <second_editor />
+              <first_editor />
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_posts/ADB-WIFI调试程序.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_posts/Android-M新特性.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_posts/RoundImageView.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
             </state>
           </provider>
         </entry>
@@ -194,6 +159,7 @@
       <find>http://7xvvky.com1.z0.glb.clouddn.com</find>
       <find>post_ass</find>
       <find>http://7xvvky.com1.z0.glb.clouddn.co</find>
+      <find>busuanzi_count</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -247,14 +213,14 @@
         <option value="$PROJECT_DIR$/source/_posts/简单聊聊Android程序的运行内存.md" />
         <option value="$PROJECT_DIR$/source/_posts/自定义View–绘制钟表.md" />
         <option value="$PROJECT_DIR$/scaffolds/post.md" />
+        <option value="$PROJECT_DIR$/themes/next/layout/_third-party/analytics/busuanzi-counter.swig" />
+        <option value="$PROJECT_DIR$/source/_posts/面试总结.md" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="19" />
-    <option name="y" value="23" />
-    <option name="width" value="1235" />
-    <option name="height" value="737" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -262,6 +228,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -272,26 +239,39 @@
             <path>
               <item name="hexo" type="b2602c69:ProjectViewProjectNode" />
               <item name="hexo" type="462c0819:PsiDirectoryNode" />
-              <item name="scaffolds" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hexo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hexo" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="_posts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hexo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hexo" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/source/img/photos" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/source/img" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/source/img/photos" />
       <recent name="$PROJECT_DIR$/source/img" />
+      <recent name="$PROJECT_DIR$/source/img/pictures" />
+      <recent name="$PROJECT_DIR$/source/img/photos" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -321,7 +301,11 @@
       <workItem from="1555288070025" duration="138000" />
       <workItem from="1555288284331" duration="266000" />
       <workItem from="1555288578025" duration="1335000" />
-      <workItem from="1555301129654" duration="3418000" />
+      <workItem from="1555301129654" duration="4957000" />
+      <workItem from="1556087511203" duration="866000" />
+      <workItem from="1557284683669" duration="3231000" />
+      <workItem from="1557297377572" duration="59000" />
+      <workItem from="1557297457414" duration="1363000" />
     </task>
     <task id="LOCAL-00001" summary="项目迁移">
       <created>1555288447541</created>
@@ -330,17 +314,30 @@
       <option name="project" value="LOCAL" />
       <updated>1555288447541</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="项目迁移，图片添加">
+      <created>1555322595237</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1555322595238</updated>
+    </task>
+    <task id="LOCAL-00003" summary="阅读统计问题修复">
+      <created>1555323515071</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1555323515071</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7158000" />
+    <option name="totallyTimeSpent" value="14216000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="19" y="23" width="1235" height="737" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25617793" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15091342" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -351,9 +348,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.75041187" visible="true" weight="0.10232558" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.7125206" weight="0.56434107" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.24958813" side_tool="true" visible="true" weight="0.10232558" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.7474186" visible="true" weight="0.539726" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.70691025" weight="0.35068494" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.25258142" side_tool="true" visible="true" weight="0.539726" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -365,473 +362,175 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="项目迁移" />
-    <option name="LAST_COMMIT_MESSAGE" value="项目迁移" />
+    <MESSAGE value="项目迁移，图片添加" />
+    <MESSAGE value="阅读统计问题修复" />
+    <option name="LAST_COMMIT_MESSAGE" value="阅读统计问题修复" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/source/_posts/Android-资源分包.md" />
+    <entry file="file://$PROJECT_DIR$/source/_posts/AndroidStudio使用中遇到的问题.md" />
+    <entry file="file://$PROJECT_DIR$/source/_posts/AndroidStudio快捷键总结.md" />
+    <entry file="file://$PROJECT_DIR$/source/_posts/AndroidStudio的Gradle插件版本更新简介.md" />
+    <entry file="file://$PROJECT_DIR$/source/_posts/Android渠道打包.md" />
+    <entry file="file://$PROJECT_DIR$/source/_posts/Apk的安装卸载等操作介绍.md" />
+    <entry file="file://$PROJECT_DIR$/source/_posts/AS2-3后找不到SDKManager启动按钮解决方法.md" />
+    <entry file="file://$PROJECT_DIR$/source/_posts/AsyncTask.md" />
+    <entry file="file://$PROJECT_DIR$/source/_posts/AS打没签名的APK包.md" />
+    <entry file="file://$PROJECT_DIR$/source/_posts/build-gradle的常用配置.md" />
+    <entry file="file://$PROJECT_DIR$/source/_posts/CheckBox和RadioButton自定义图标的问题.md" />
+    <entry file="file://$PROJECT_DIR$/source/_posts/getter-模板技巧.md" />
+    <entry file="file://$PROJECT_DIR$/source/_posts/Service.md" />
+    <entry file="file://$PROJECT_DIR$/source/_posts/ShapeTextView.md" />
+    <entry file="file://$PROJECT_DIR$/source/_posts/SystemBar.md" />
+    <entry file="file://$PROJECT_DIR$/source/_posts/Toolbar的使用.md" />
+    <entry file="file://$PROJECT_DIR$/source/_posts/Volley.md" />
+    <entry file="file://$PROJECT_DIR$/source/_posts/WebView使用总结.md" />
+    <entry file="file://$PROJECT_DIR$/source/_posts/云服务器配置JDK.md" />
+    <entry file="file://$PROJECT_DIR$/source/_posts/云服务器配置Tomcat.md" />
+    <entry file="file://$PROJECT_DIR$/source/_posts/关于EditText的使用技巧.md" />
+    <entry file="file://$PROJECT_DIR$/source/_posts/关于shape-selector-style.md" />
+    <entry file="file://$PROJECT_DIR$/source/_posts/关于TextViewt的使用技巧.md" />
+    <entry file="file://$PROJECT_DIR$/source/_posts/初识小程序.md" />
+    <entry file="file://$PROJECT_DIR$/source/_posts/小程序-影讯.md" />
+    <entry file="file://$PROJECT_DIR$/source/_posts/布局优化.md" />
+    <entry file="file://$PROJECT_DIR$/source/_posts/干货-看看Android开发者都装了什么软件.md" />
+    <entry file="file://$PROJECT_DIR$/source/_posts/开发一个Servlet项目.md" />
+    <entry file="file://$PROJECT_DIR$/source/_posts/日常小总结.md" />
     <entry file="file://$PROJECT_DIR$/db.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/2018/05/18/开发一个Servlet项目/index.html">
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/流式布局的使用.md" />
+    <entry file="file://$PROJECT_DIR$/source/_posts/简单聊聊Android程序的运行内存.md" />
+    <entry file="file://$PROJECT_DIR$/source/_posts/自定义View–绘制钟表.md" />
+    <entry file="file://$PROJECT_DIR$/scaffolds/page.md" />
+    <entry file="file://$PROJECT_DIR$/scaffolds/post.md" />
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10380">
-          <caret line="692" column="25" selection-start-line="692" selection-start-column="25" selection-end-line="692" selection-end-column="25" />
+        <state relative-caret-position="285">
+          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/avatar.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/algolia_logo.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/searchicon.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
+    <entry file="file://$PROJECT_DIR$/themes/next/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+        <state relative-caret-position="6180">
+          <caret line="412" column="24" selection-start-line="412" selection-start-column="24" selection-end-line="412" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/img/pictures/picture1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/Activity.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/themes/next/layout/_third-party/analytics/busuanzi-counter.swig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/Activity启动模式.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/ADB-WIFI调试程序.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="75">
-            <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/adb常用命令总结.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/Android-M新特性.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/Android-资源分包.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/AndroidStudio使用中遇到的问题.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="75">
-            <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/AndroidStudio快捷键总结.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="75">
-            <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/AndroidStudio的Gradle插件版本更新简介.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/Android渠道打包.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/Apk的安装卸载等操作介绍.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="28" lean-forward="true" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/AS2-3后找不到SDKManager启动按钮解决方法.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/AsyncTask.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/AS打没签名的APK包.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="75">
-            <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/adb常用命令总结.md" />
     <entry file="file://$PROJECT_DIR$/source/_posts/Banner的封装-实现ViewPager的循环轮播效果.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="75">
-            <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/build-gradle的常用配置.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-          </first_editor>
-          <second_editor />
+          <first_editor />
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_posts/Charles-修改返回报文.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-          </first_editor>
-          <second_editor />
+          <first_editor />
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/Charles-抓取https报文.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+    <entry file="file://$PROJECT_DIR$/source/img/launchmode.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/关于MeasureSpec.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          </first_editor>
-          <second_editor />
+          <first_editor />
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/CheckBox和RadioButton自定义图标的问题.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+    <entry file="file://$PROJECT_DIR$/source/_posts/Activity.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-          </first_editor>
-          <second_editor />
+          <first_editor />
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/getter-模板技巧.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+    <entry file="file://$PROJECT_DIR$/source/_posts/Activity启动模式.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          </first_editor>
-          <second_editor />
+          <first_editor />
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/ADB-WIFI调试程序.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/Android-M新特性.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_posts/RoundImageView.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/Service.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/ShapeTextView.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/SystemBar.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/Toolbar的使用.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/Volley.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/WebView使用总结.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="60">
-            <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/云服务器配置JDK.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/云服务器配置Tomcat.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/关于EditText的使用技巧.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="24">
-            <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/关于MeasureSpec.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="31" lean-forward="true" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/关于shape-selector-style.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/关于TextViewt的使用技巧.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/初识小程序.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/小程序-影讯.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/布局优化.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/干货-看看Android开发者都装了什么软件.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/开发一个Servlet项目.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/日常小总结.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/流式布局的使用.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/简单聊聊Android程序的运行内存.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/自定义View–绘制钟表.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="73">
-            <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scaffolds/page.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
           <first_editor />
-          <second_editor />
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scaffolds/post.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+    <entry file="file://$PROJECT_DIR$/source/_posts/Charles-抓取https报文.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="60">
-            <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+          <first_editor relative-caret-position="-535" />
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/面试总结.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-715">
+            <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
           </first_editor>
-          <second_editor />
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
         </state>
       </provider>
     </entry>
