@@ -187,7 +187,7 @@ context.bindService-->onCreat()(只执行一次)-->onBind()(只绑定一次)-->S
 
 ## IntentService
 
-> IntentService是带有子线程的服务组件，其内部使用了单线程池模式，
+> IntentService是带有子线程的服务组件，内部通过HandlerThread实现
 
   当所有的任务执行完成后，会自动关闭本服务
  **其生命周期方法：**
@@ -196,6 +196,8 @@ context.bindService-->onCreat()(只执行一次)-->onBind()(只绑定一次)-->S
  * 	onHandleIntent() 在子线程中执行的方法
  *  onDestroy()
  创建IntentService子类时，需要提供一个无参的构造方法且调用super(name)子线程的名称，如果没有无参数的构造方法清单文件注册Service时会报错
+ 
+ **不建议通过bindService来启动IntentService,因为IntentService是在子线程中执行，而且bindService()启动不会执行onStartCommand()方法，没有了IntentService的设计初衷**
 
 ## 粘性Service
 

@@ -45,5 +45,96 @@ categories: [Android]
 
 
 ## 补充
-1. 使用execute(),启动异步任务，任务串行执行（一个执行完才会执行另一个任务）
+1. 使用execute(),启动异步任务，任务串行执行（一个执行完才会执行另一个任务）源码实现如下
+
+```
+   public final AsyncTask<Params, Progress, Result> execute(Params... params) {
+        return executeOnExecutor(sDefaultExecutor, params);
+    }
+    
+    
+     @MainThread
+    public final AsyncTask<Params, Progress, Result> executeOnExecutor(Executor exec,
+            Params... params) {
+        if (mStatus != Status.PENDING) {
+            switch (mStatus) {
+                case RUNNING:
+                    throw new IllegalStateException("Cannot execute task:"
+                            + " the task is already running.");
+                case FINISHED:
+                    throw new IllegalStateException("Cannot execute task:"
+                            + " the task has already been executed "
+                            + "(a task can be executed only once)");
+            }
+        }
+
+        mStatus = Status.RUNNING;
+
+        onPreExecute();
+
+        mWorker.mParams = params;
+        exec.execute(mFuture);
+
+        return this;
+    }
+    
+    
+```
+> execute()方法的具体实现实在executeOnExecutor()方法中， onPreExecute()方法也在此处调用。任务的具体执行则在`sDefaultExecutor`中，这是一个`SerialExecutor`类型，源码如下
+
+```
+ private static class SerialExecutor implements Executor {
+        final ArrayDeque<Runnable> mTasks = new ArrayDeque<Runnable>();
+        Runnable mActive;
+
+        public synchronized void execute(final Runnable r) {
+            mTasks.offer(new Runnable() {
+                public void run() {
+                    try {
+                        r.run();
+                    } finally {
+                        scheduleNext();
+                    }
+                }
+            });
+            if (mActive == null) {
+                scheduleNext();
+            }
+        }
+
+        protected synchronized void scheduleNext() {
+            if ((mActive = mTasks.poll()) != null) {
+                THREAD_POOL_EXECUTOR.execute(mActive);
+            }
+        }
+    }
+```
+> 如上，`executeOnExecutor()`中调用` exec.execute(mFuture)`方法，具体执行在`SerialExecutor`的`public synchronized void execute(final Runnable r)`
+方法中。它把每个任务添加到`mTasks`中，然后通过`scheduleNext（）`方法取出任务，并通过`THREAD_POOL_EXECUTOR`线程池来执行。每个任务的运行通过`try catch处理`，无论上个任务的运行结果，`scheduleNext()`都会在`finally()`中执行。
+`SerialExecutor`用来保证任务是串行执行。
+
+
+
 2. 使用  task.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR,"Task"+i);启动异步任务，任务会并发执行（多个任务一起执行）
+
+> `executeOnExecutor()`启动方法会绕过`SerialExecutor`的逻辑，线程池会直接执行任务，并发的任务可以通过线程池控制，也可以自定义线程池
+
+3. AsyncTask 不适合耗时任务
+
+> AsyncTask 中任务的具体执行是通过 `threadPoolExecutor` 线程池，如下，非核心线程的超时时间为 3s,此外默认任务是串行执行，
+如果多个耗时任务的话效率也会比较低。
+```
+  private static final int CORE_POOL_SIZE = 1;
+    private static final int MAXIMUM_POOL_SIZE = 20;
+    private static final int BACKUP_POOL_SIZE = 5;
+    private static final int KEEP_ALIVE_SECONDS = 3;
+    
+ static {
+        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(
+                CORE_POOL_SIZE, MAXIMUM_POOL_SIZE, KEEP_ALIVE_SECONDS, TimeUnit.SECONDS,
+                new SynchronousQueue<Runnable>(), sThreadFactory);
+        threadPoolExecutor.setRejectedExecutionHandler(sRunOnSerialPolicy);
+        THREAD_POOL_EXECUTOR = threadPoolExecutor;
+    }
+
+```
