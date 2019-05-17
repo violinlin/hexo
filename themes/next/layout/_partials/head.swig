@@ -9,7 +9,7 @@
 
 
 {% if theme.google_site_verification %}
-  <meta name="google-site-verification" content="{{ theme.google_site_verification }}" />
+  <meta name="google-site-verification" content="a9HrGvK0gXBrLVVi7MeSWvHJNPlDYO7JIuMN4BFqeaI" />
 {% endif %}
 
 
@@ -105,6 +105,14 @@
       labels: {{ theme.algolia_search.labels | json_encode }}
     }
   };
+</script>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-9135039735618032",
+    enable_page_level_ads: true
+  });
 </script>
 
 {# Canonical, good for google search engine (SEO) : https://support.google.com/webmasters/answer/139066 #}
