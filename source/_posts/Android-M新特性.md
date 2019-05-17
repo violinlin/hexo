@@ -15,7 +15,7 @@ categories: [Android]
 # Snackbar
 > Snackbar提供了一个介于Toast和AlertDialog之间轻量级控件，它可以很方便的提供消息的提示和动作反馈。
 
-```
+```java
 Snackbar snackbar = Snackbar.make(inputLayout,"测试弹出提示",Snackbar.LENGTH_LONG);
                 snackbar.show();
                 snackbar.setAction("取消",new View.OnClickListener() {

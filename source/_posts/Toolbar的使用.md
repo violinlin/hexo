@@ -139,7 +139,7 @@ tags: [Android,MD]
 
 3.3 设置菜单点击回调监听
 
-```
+```java
  @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
@@ -186,7 +186,7 @@ tags: [Android,MD]
 ### 4.2 菜单弹窗背景、字体的自定义
 4.2.1 在styles.xml样式文件中定义`Toolbar`菜单的样式
 
-```
+```xml
   <!--菜单上文字的大小和颜色-->
     <style name="Theme.Toolbar.PopMenu">
         <item name="android:textSize">18sp</item>
@@ -220,7 +220,7 @@ tags: [Android,MD]
 ```
 4.3.2 在创建菜单的时候设置图标是否显示
 
-```
+```java
  @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         setIconEnable(menu, true);

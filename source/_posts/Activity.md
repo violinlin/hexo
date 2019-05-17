@@ -19,7 +19,7 @@ categories: [Android]
 
 1. 启动App,MainActivity创建生命周期如下
 
-```
+```java
 D/Activity: MainActivity	onCreate
 D/Activity: MainActivity	onStart
 D/Activity: MainActivity	onResume
@@ -28,7 +28,7 @@ D/Activity: MainActivity	onResume
 
 > 从日志可以看出`MainActivity`会先走`onPause()`方法，等`SecondActivity`界面走完创建流程，到`onResume()`之后，前一个界面才会走`onStop()`方法
 
-```
+```java
 D/Activity: MainActivity	onPause
 D/Activity: SecondActivity	onCreate
 D/Activity: SecondActivity	onStart
@@ -39,7 +39,7 @@ D/Activity: MainActivity	onStop
 
 > 当上一个界面`MainActivity`重新`onResume()`后，`SecondActivity`才会调`onStop(),onDestory()`方法
 
-```
+```java
 D/Activity: SecondActivity	onPause
 D/Activity: MainActivity	onStart
 D/Activity: MainActivity	onResume
@@ -55,7 +55,7 @@ D/Activity: SecondActivity	onDestroy
 
 # onNewIntent方法的执行时机
 
-```
+```java
 当此Activity的实例已经存在，并且此时的启动模式为SingleTask和SingleInstance，另外当这个实例位于栈顶且启动模式为SingleTop时也会触发onNewInstent()。
 ```
 
@@ -68,13 +68,13 @@ D/Activity: SecondActivity	onDestroy
 > 打开目标Activity权限失败，例如目标Activity中设置了下面参数
 
 
- ```
+ ```java
  android:exported="false"
  
  ```
 具体错误信息 
 
-```
+```java
 Permission Denial: starting Intent { act=android.intent.action.VIEW dat=plugin:// flg=0x10200000 cmp=cn.qbzsydsq.reader/demo.ad.dy.com.appdemo.plugin.PluginActivity } from ProcessRecord{80c0b66 26467:com.violin.violindemo/u0a931} (pid=26467, uid=10931) not exported from uid 11016
 ```
 
@@ -84,7 +84,7 @@ Permission Denial: starting Intent { act=android.intent.action.VIEW dat=plugin:/
 
 具体错误信息 
 
-```
+```java
 android.content.ActivityNotFoundException: No Activity found to handle Intent { act=android.intent.action.VIEW dat=plugi:// flg=0x10200000 }
 
 ```

@@ -22,7 +22,7 @@ categories: [Android]
 
 **当Activity的启动模式设置为`singleTask`时，任务栈中只会创建一次这个Activity的对象，当重复启动该Activity时会调用`onNewIntent()`方法，而不是`onCreate()`方法，同时会将任务栈中该Activity上面的Activity清除出栈。**
 
-```
+```java
 D/whl: AActivity------onCreate
 D/whl: BActivity------onCreate
 D/whl: CActivity------onCreate
@@ -36,7 +36,7 @@ D/whl: CActivity------onDestroy
 
 **当Activity的启动模式设置为`singleTop`时，任务栈中允许创建多个该Activity的对象。但是，如果当该Activity位于任务栈顶时再次启动该界面，不会创建新的对象。**
 
-```
+```java
 D/whl: AActivity------onCreate
 D/whl: BActivity------onCreate
 D/whl: BActivity------onNewIntent
@@ -53,7 +53,7 @@ D/whl: BActivity------onNewIntent
 
 > 按照官方文档的解释，当设置这个FLAG通过Intent启动目标Activity时，在栈中位于目标Activity之上的界面都会被清除出栈。目标Activity会位于栈顶，接受新的Intent。根据文档，我的理解是目标Activity的`onNewIntent()`方法会被调用，且不会创建新的对象。通过Demo来验证一下`A-->B-->C-->B`。依次启动A、B、C界面，当C启动B时，设置`FLAG_ACTIVITY_CLEAR_TOP`FLAG。
 
-```
+```java
 AActivity------onCreate
 BActivity------onCreate
 CActivity------onCreate
@@ -72,7 +72,7 @@ CActivity------onDestroy
 A-->B-->C 依次启动A、B、C当重B启动C时添加FLAG
 
 
-```
+```java
 AActivity------onCreate
 BActivity------onCreate
 AActivity------onDestroy
@@ -86,7 +86,7 @@ BActivity------onDestroy
 > If set in an Intent passed to Context.startActivity(), this flag will cause the launched activity to be brought to the front of its task's history stack if it is already running.
 这个FLAG理解比较简单A-->B-->C-->B 依次启动A、B、C，栈中的顺序为ABC,当从C启动B时设置`FLAG_ACTIVITY_REORDER_TO_FRONT`日志如下：
 
-```
+```java
 AActivity------onCreate
 BActivity------onCreate
 CActivity------onCreate

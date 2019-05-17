@@ -29,7 +29,7 @@ categories: [Android]
 ```
 gradle3.0之后需要使用下面方法
 
-```
+```gradle
  //修改打包命名开始
     def today = new Date().format('MMddHHmm')
     def name = new String(defaultConfig.applicationId)
@@ -57,7 +57,7 @@ gradle3.0之后需要使用下面方法
 
 1. 在顶级`build.gradle`文件中添加`ext`代码块
 
-```
+```gradle
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
@@ -100,7 +100,7 @@ ext {
 
 2. 在各个`moudle`的`build.gradle`引用配置信息
 
-```
+```gradle
 android {
   // Use the following syntax to access properties you defined at the project level:
   // rootProject.ext.property_name
@@ -120,7 +120,7 @@ dependencies {
 
 1. 在`gralde.properties`文件中添加依赖版本信息
 
-```
+```gradle
 # When configured, Gradle will run in incubating parallel mode.
 # This option should only be used with decoupled projects. More details, visit
 # http://www.gradle.org/docs/current/userguide/multi_project_builds.html#sec:decoupled_projects
@@ -135,7 +135,7 @@ SUPPORT_VERSION=25.4.0
 
 > 在`gradle.properties`中配置的信息会作为字符串处理，如果参数需要数值类型的话需要在后面添加`as int`
 
-```
+```gradle
 android {
   // Use the following syntax to access properties you defined at the project level:
   // rootProject.ext.property_name
@@ -158,7 +158,7 @@ dependencies {
 > 在构建时，Gradle 将生成 BuildConfig 类，以便应用代码可以检查与当前构建有关的信息。可以使用 buildConfigField() 函数，将自定义字段添加到 Gradle 构建配置文件的 BuildConfig 类中，然后在应用的运行时代码中访问这些值。同样，也可以使用 resValue() 添加应用资源值。[官方文档](https://developer.android.com/studio/build/gradle-tips.html)
 
 
-```
+```gradle
 android {
   
   buildTypes {

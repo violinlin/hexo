@@ -16,7 +16,7 @@ categories:
 
 > 有人喜欢在定义变量时加个前缀，用来区分全局变量、静态变量、局部变量等，例如常用的成员变量前缀为m。如果添加了前缀，在生成get\set方法时，方法名会带上这个前缀,如下
 
-```
+```java
  private String mName;
 
     public String getmName() {
@@ -32,7 +32,7 @@ categories:
 
 重新生成'get'方法
 
-```
+```java
  private String mName;
 
     public String getName() {
@@ -47,7 +47,7 @@ categories:
 
 修改后生成代码如下:
 
-```
+```java
  private String mName;
     private List<String> mList;
 
@@ -73,7 +73,7 @@ categories:
 
  ![](/img/getter_templete.png)
  
- ```
+ ```java
  #if($field.modifierStatic)
  static ##
  #end

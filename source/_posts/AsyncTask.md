@@ -12,7 +12,7 @@ categories: [Android]
 
 三种泛型参数类型分别代表“启动任务执行的输入参数”、“后台任务执行的进度”、“后台计算结果的类型”。在特定场合下，并不是所有类型都被使用，如果没有被使用，可以用java.lang.Void类型代替。
 
-```
+```java
     public abstract class AsyncTask<Params, Progress, Result>  
 ```
 

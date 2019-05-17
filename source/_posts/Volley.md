@@ -15,13 +15,13 @@ categories: [Android]
 
 1. 声明RequestQueue
 
-```
+```java
 mRequestQueue =  Volley.newRequestQueue(this); 
 ```
 
 2.  声明并使用Request
 
-```
+```java
     JsonObjectRequest jr = new JsonObjectRequest(Request.Method.GET,url,null,new Response.Listener<JSONObject>() {  
                 @Override  
                 public void onResponse(JSONObject response) {  
@@ -54,7 +54,7 @@ mRequestQueue =  Volley.newRequestQueue(this);
 ### 使用ImageRequest下载图片
 > Volley提供了多种Request方法，ImageRequest能够处理单张图片，返回bitmap。下面是ImageRequest的使用例子，和JsonRequest的一样。
 
-```
+```java
     singleImg=(ImageView)findViewById(R.id.volley_img_single_imgeview);  
             ImageRequest imgRequest=new ImageRequest(url, new Response.Listener<Bitmap>() {  
                 @Override  
@@ -81,7 +81,7 @@ mRequestQueue =  Volley.newRequestQueue(this);
 sizeOf()，那么构造参数 代表 占⽤用的最⼤ 内存尺⼨；
 2. 如果 LruCache 不重写 sizeOf（），代表 最多能够
 存多少个对象；
-```
+```java
     RequestQueue mRequestQueue = Volley.newRequestQueue(this);  
             final LruCache<String, Bitmap> mImageCache = new LruCache<String, Bitmap>(20*1024*1024){
 	 @Override
@@ -119,7 +119,7 @@ sizeOf()，那么构造参数 代表 占⽤用的最⼤ 内存尺⼨；
 > 这个控件在被从父控件detach的时候，会自动取消网络请求的，即完全不用我们担心相关网络请求的生命周期问题。
 > 这里也会用到ImageLoadr
 
-```
+```java
 setImageUrl(String url,ImageLoader imageLoader) 设置图片资源
 setDefaultImageResId(int resId) 设置默认图片
 ```
@@ -129,7 +129,7 @@ setDefaultImageResId(int resId) 设置默认图片
 使用Volley的话，我们可以在Activity停止的时候，同时取消所有或部分未完成的网络请求。
 ### 取消请求集合里的所有请求
 
-```
+```java
     @Override  
     public void onStop() {  
         for (Request <?> req : mInFlightRequests) {  
@@ -142,14 +142,14 @@ setDefaultImageResId(int resId) 设置默认图片
 ### 取消队列里的所有请求
 
 
-```
+```java
     @Override pubic void onStop() {  
         mRequestQueue.cancelAll(this);  
         ...  
     }  
 ``` 
 ### 根据RequestFilter或者Tag来终止某些请求
-```
+```java
     @Override public void onStop() {  
         mRequestQueue.cancelAll( new RequestFilter() {})  
         ...  

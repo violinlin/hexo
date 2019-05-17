@@ -26,7 +26,7 @@ categories: [Android]
 
 > 以响应完成为例`actionId == EditorInfo.IME_ACTION_DONE`
 
-```
+```java
 editText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
                     @Override
                     public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {

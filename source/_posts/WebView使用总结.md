@@ -238,7 +238,7 @@ mWebView.evaluateJavascript（"javascript:callJS(\"Java 调用 JS \")", new Valu
 
 ## 6.清除界面
 
-```
+```java
  private void clearWebView() {
         if (webView != null) {
             webView.loadUrl("about:blank");
@@ -252,7 +252,7 @@ mWebView.evaluateJavascript（"javascript:callJS(\"Java 调用 JS \")", new Valu
 
 ### 7.1拦截下载链接
 
-```
+```java
   webView.setDownloadListener(new DownloadListener() {
             @Override
             public void onDownloadStart(String url, String userAgent, String contentDisposition, String mimetype, long contentLength) {
@@ -274,7 +274,7 @@ mWebView.evaluateJavascript（"javascript:callJS(\"Java 调用 JS \")", new Valu
 在Android上需要手动开启（setAppCacheEnabled），并设置路径（setAppCachePath）和容量 
 （setAppCacheMaxSize），而Android中使用ApplicationCache.db来保存AppCache数据！
 
-```
+```java
  webView.getSettings().setAppCacheMaxSize(1024*1024*8);
         String appCachePath = getContext().getApplicationContext().getCacheDir().getAbsolutePath();
         webView.getSettings().setAppCachePath(appCachePath);
@@ -287,7 +287,7 @@ Storage和Local Storage两种，分别用于会话级别的存储（页面关闭
 删除，否则数据永远不会过期）在Android中可以手动开启DOM Storage（setDomStorageEnabled）， 
 设置存储路径（setDatabasePath）Android中Webkit会为DOMStorage产生两个文件（my_path/localstorage/http_blog.csdn.net_0.localstorage和my_path/Databases.db)
 
-```
+```java
   // 开启DOM storage API 功能
         webView.getSettings().setDomStorageEnabled(true);
 ```
@@ -303,7 +303,7 @@ webSettings.setJavaScriptEnabled(true);
 
 > 需要自己实现DownLoadListener
 
-```
+```java
 webView.setDownloadListener(new DownloadListener() {
             @Override
             public void onDownloadStart(String url, String userAgent, String contentDisposition, String mimetype, long contentLength) {
@@ -318,7 +318,7 @@ webView.setDownloadListener(new DownloadListener() {
 > WebView加载自签名的https链接失败
 需要在`WebViewClient`中重写下面方法
 
-```
+```java
           @Override
             public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
                 handler.proceed(); // 加载https的不安全网站处理 例如https://www.12306.cn/mormhweb/
@@ -329,7 +329,7 @@ webView.setDownloadListener(new DownloadListener() {
 
 > 如果网页使用了`Local Storage`存储，如果设置中没给与相应权限，界面会加载空白
 
-```
+```java
   // 开启DOM storage API 功能
         webView.getSettings().setDomStorageEnabled(true);
 ```

@@ -116,7 +116,7 @@ tags: [Android,自定义view]
 
 ## 重写`onDraw()`方法
 
-```
+```java
 @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);

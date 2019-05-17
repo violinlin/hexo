@@ -16,13 +16,13 @@ tags: [Android]
 
  如果清单文件中配置了统计渠道字段，替换相应平台的渠道号
 
-```
+```xml
   <meta-data
             android:name="CHANEL"
             android:value="${CHANEL}" />
 ```
 
-```
+```gradle
  productFlavors {
         baidu {
             manifestPlaceholders=[CHANEL:"baidu"]

@@ -105,7 +105,7 @@ public class FirstServlet extends HttpServlet {
 修改'FirstServlet'中的处理逻辑，处理上传报文和返回报文。这里只是做了简单处理：读取打印上传报文，添加自定义信息拼接上传报文最为回复报文返回。
 实际可按照自己项目中的报文加解密规则处理。
 
-```
+```java
 public class FirstServlet extends HttpServlet {
 
     @Override

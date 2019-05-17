@@ -24,7 +24,7 @@ Android 4.4(API 19) 以上支持了沉浸模式`IMMERSIVE MODE` 可以让布局�
 ### 1.2 隐藏系统栏
 > 默认界面获取焦点的时候隐藏系统栏，所以在`onResume()`方法中进行下面操作
 
-```
+```java
  @Override
     protected void onResume() {
         super.onResume();
@@ -42,7 +42,7 @@ Android 4.4(API 19) 以上支持了沉浸模式`IMMERSIVE MODE` 可以让布局�
 ### 1.3 显示系统栏
 > 点击界面时显示系统通知栏
 
-```
+```java
  private void showSysBar() {
         decorView.setSystemUiVisibility(SHOW_SYSBAR_FLAG);
         relativeLayout.startAnimation(mShowAction);
@@ -55,7 +55,7 @@ Android 4.4(API 19) 以上支持了沉浸模式`IMMERSIVE MODE` 可以让布局�
  2.2 系统栏FLAG说明
  
 
-```
+```java
   private final int HIDE_SYSBAR_FLAG = View.SYSTEM_UI_FLAG_LAYOUT_STABLE
             | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
             | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
@@ -70,7 +70,7 @@ Android 4.4(API 19) 以上支持了沉浸模式`IMMERSIVE MODE` 可以让布局�
 
 2.3 视图动画说明
 
-```
+```java
  TranslateAnimation mShowAction;
 
     private void showAction() {

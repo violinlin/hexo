@@ -18,7 +18,7 @@ categories: [Android]
 > 新建Service的子类，重写一个抽象方法（onBind( )），和三个核心的生命周期方法 onCreate()，onStartCommand()， onDestroy()。通过日志观察服务的生命周期 。**Ps:服务需要到清单文件中注册** 
 
 
-```
+```java
 public class MyService extends Service {
 
     private static final String TAG = MyService.class.getName();
@@ -57,7 +57,7 @@ public class MyService extends Service {
 ```
 > 通过`startService()`启动服务，通过`stopService()`停止服务
 
-```
+```java
  startService.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -96,7 +96,7 @@ context.startService-->onCreat()(只执行一次)-->onstartCommand()-->Service R
 
 新建`MyBindler`类继承`Binder`，在类中定义`Activity`操作`Service`的方法，例如现在要实现播放功能：
 
-```
+```java
  class MyBindler extends Binder {
         public void init() {
 
@@ -116,7 +116,8 @@ context.startService-->onCreat()(只执行一次)-->onstartCommand()-->Service R
     }
 ```
 在`MyService`的`onBind()`方法中返回`MyBindler`对象
-```
+
+```java
 ...
  @Override
     public IBinder onBind(Intent intent) {
@@ -130,7 +131,7 @@ context.startService-->onCreat()(只执行一次)-->onstartCommand()-->Service R
 
 在`Activity` 中定义`MyBindler`对象，并在服务绑定时完成初始化
 
-```
+```java
  private MyService.MyBindler mProgressBindler;
 
     private ServiceConnection mServiceConnection = new ServiceConnection() {
@@ -152,7 +153,7 @@ context.startService-->onCreat()(只执行一次)-->onstartCommand()-->Service R
 通过`bindService()`方法绑定服务
 **通过bindService启动的Service不会调用onStartCommand()方法**
 
-```
+```java
  Intent intent = new Intent(v.getContext(), MyService.class);
  // 绑定服务的类型和作用在后面列表中列出
  bindService(intent, mServiceConnection, BIND_AUTO_CREATE);
@@ -161,7 +162,7 @@ context.startService-->onCreat()(只执行一次)-->onstartCommand()-->Service R
 
 通过`unBindService()`方法解绑服务
 
-```
+```java
 unbindService(mServiceConnection);
 ```
 context.bindService-->onCreat()(只执行一次)-->onBind()(只绑定一次)-->ServiceRunning-->onUnBind()-->onDestory()(只执行一次)-->Service Stop

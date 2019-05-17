@@ -18,7 +18,7 @@ categories: [Android]
 
 >  明确自定义视图要实现的功能，并为其功能定义配置的属性信息。这里我想实现的是带有边框的圆角或者圆形的视图，并且边框的宽度、颜色、是否覆盖图片，圆角图片的圆角半径等功能都可动态配置。所以定义视图属性主要如下：
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="RoundImageView">
@@ -41,7 +41,7 @@ categories: [Android]
 
 > 整个视图我们可以理解为有三部分：背景、图片、边框。每一部分是独立绘制的，这里需要初始化三种类型的画笔。
 
-```
+```java
 mBitmapShader = new BitmapShader(mBitmap, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP);
         //图片画笔
         mBitmapPaint.setAntiAlias(true);
@@ -65,7 +65,7 @@ mBitmapShader = new BitmapShader(mBitmap, Shader.TileMode.CLAMP, Shader.TileMode
 
 > 视图绘制区域的计算逻辑也比较好理解，主要做了兼容视图的padding属性的处理。另外，如果是圆形视图，绘制区域会以较短的边作为半径，既绘制区域内最大内切圆。 
 
-```
+```java
  /**
      * 计算可绘制的区域
      *
@@ -93,7 +93,7 @@ mBitmapShader = new BitmapShader(mBitmap, Shader.TileMode.CLAMP, Shader.TileMode
 
 上面计算的是视图内可绘制的最大区域，边框，图片、背景都应该在这个区域内绘制。不过属性中定义了`round_border_overlay`边框是否覆盖图片这个配置属性，所以当边框不是覆盖在图片上时，图片的可绘制区域应减少边框的宽度大小。
 
-```
+```java
   mBorderRect.set(calculateBounds());
 
 
@@ -113,7 +113,7 @@ mBitmapShader = new BitmapShader(mBitmap, Shader.TileMode.CLAMP, Shader.TileMode
 > 图片的可绘制区域确定后为了更好的显示效果，需要根据图片绘制区域和图片的大小进行缩放处理。
 
 
-```
+```java
  private void updateShaderMatrix() {
         float scale;
         float dx = 0;
@@ -150,7 +150,7 @@ mBitmapShader = new BitmapShader(mBitmap, Shader.TileMode.CLAMP, Shader.TileMode
 > 画笔、绘制区域、图片缩放等逻辑都处理好后，接下来就是视图的绘制。重写`onDraw()`方法。根据圆角或者圆形调用canvas.drawRoundRect或者canvas.drawCircle方法绘制视图。
 绘制边框是需要注意，画笔设置了`setStrokeWidth`属性，绘制区域为绘制区域中心到`strokWidth`中心的距离，所以绘制边框时需要将绘制区域向内缩小`strokeWidth/2`的大小，保证边框完全显示。
 
-```
+```java
  if (mIsOval) {
             // 绘制圆形
             if (mCircleBackgroundColor != Color.TRANSPARENT) {
