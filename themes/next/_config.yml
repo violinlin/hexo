@@ -3,7 +3,7 @@
 # ---------------------------------------------------------------
 
 # Put your favicon.ico into `hexo-site/source/` directory.
-favicon: http://oi2uynp9t.bkt.clouddn.com/image/icon.png
+favicon: /images/pictures/icon.png
 
 # Set default keywords (Use a comma to separate)
 keywords: "Hexo, violin"
@@ -11,7 +11,7 @@ keywords: "Hexo, violin"
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
-rss:
+rss: false
 
 # Specify the date when the site was setup
 since: 2016
@@ -154,7 +154,7 @@ social_icons:
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
-avatar: http://oi2uynp9t.bkt.clouddn.com/image/icon.png
+avatar: /images/pictures/icon.png
 
 
 # Table Of Contents in the Sidebar
@@ -268,7 +268,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night
 
 
 # ---------------------------------------------------------------
@@ -315,7 +315,7 @@ changyan:
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-#livere_uid: your uid
+livere_uid: MTAyMC80NDI2OC8yMDgwMQ==
 
 # Baidu Share
 # Available value:

@@ -47,7 +47,7 @@ categories: [Android]
 ## 补充
 1. 使用execute(),启动异步任务，任务串行执行（一个执行完才会执行另一个任务）源码实现如下
 
-```
+```java
    public final AsyncTask<Params, Progress, Result> execute(Params... params) {
         return executeOnExecutor(sDefaultExecutor, params);
     }
@@ -82,7 +82,7 @@ categories: [Android]
 ```
 > execute()方法的具体实现实在executeOnExecutor()方法中， onPreExecute()方法也在此处调用。任务的具体执行则在`sDefaultExecutor`中，这是一个`SerialExecutor`类型，源码如下
 
-```
+```java
  private static class SerialExecutor implements Executor {
         final ArrayDeque<Runnable> mTasks = new ArrayDeque<Runnable>();
         Runnable mActive;
@@ -123,7 +123,7 @@ categories: [Android]
 
 > AsyncTask 中任务的具体执行是通过 `threadPoolExecutor` 线程池，如下，非核心线程的超时时间为 3s,此外默认任务是串行执行，
 如果多个耗时任务的话效率也会比较低。
-```
+```java
   private static final int CORE_POOL_SIZE = 1;
     private static final int MAXIMUM_POOL_SIZE = 20;
     private static final int BACKUP_POOL_SIZE = 5;
@@ -145,7 +145,7 @@ categories: [Android]
 > AsyncTask 是Handler和Thread的封装，创建任务时Looper是主线程的就不影响执行过程。不过最好还是按照官方文档在主线程中执行。
 > AsyncTask 提供了三个构造方法，可供外部使用的只有无参的那个，具体初始化是在传参为Loop类型的构造器中。如代码，无论在哪个线程中启动，mHandler 中的Looper都是Looper.getMainLooper()。
 
-```
+```java
  /**
      * Creates a new asynchronous task. This constructor must be invoked on the UI thread.
      */
@@ -179,7 +179,7 @@ categories: [Android]
 ```
 `onPreExecute`的方法执行在`execute()`的调用线程。
 
-```
+```java
  @MainThread
     public final AsyncTask<Params, Progress, Result> execute(Params... params) {
         return executeOnExecutor(sDefaultExecutor, params);
