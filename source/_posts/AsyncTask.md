@@ -32,7 +32,7 @@ categories: [Android]
 # 在使用的时候，有几点需要格外注意：
 
 1.异步任务的实例一般在UI线程中创建。
-（它的内部使用Handler实现，需要Looper对象）
+（它的内部使用Handler实现，需要Looper对象,也可以子线程中调用，后面会介绍到）
 
 2.execute(Params... params)方法必须在UI线程中调用。
 
@@ -138,3 +138,78 @@ categories: [Android]
     }
 
 ```
+4. 子线程中是否可以启动AsyncTask？
+
+> 可以启动，但是`onPreExecute`的方法执行在`execute()`的调用线程,`doInBackground()`方法仍然在线程池新建的线程中执行
+> `onProgressUpdate()`、`onPostExecute()`等其他通过handler机制回调的方法则在主线程中执行。
+> AsyncTask 是Handler和Thread的封装，创建任务时Looper是主线程的就不影响执行过程。不过最好还是按照官方文档在主线程中执行。
+> AsyncTask 提供了三个构造方法，可供外部使用的只有无参的那个，具体初始化是在传参为Loop类型的构造器中。如代码，无论在哪个线程中启动，mHandler 中的Looper都是Looper.getMainLooper()。
+
+```
+ /**
+     * Creates a new asynchronous task. This constructor must be invoked on the UI thread.
+     */
+    public AsyncTask() {
+        this((Looper) null);
+    }
+
+    /**
+     * Creates a new asynchronous task. This constructor must be invoked on the UI thread.
+     *
+     * @hide
+     */
+    public AsyncTask(@Nullable Handler handler) {
+        this(handler != null ? handler.getLooper() : null);
+    }
+
+    /**
+     * Creates a new asynchronous task. This constructor must be invoked on the UI thread.
+     *
+     * @hide
+     */
+    public AsyncTask(@Nullable Looper callbackLooper) {
+        mHandler = callbackLooper == null || callbackLooper == Looper.getMainLooper()
+            ? getMainHandler()
+            : new Handler(callbackLooper);
+            
+            ...
+            ...
+            ...
+}
+```
+`onPreExecute`的方法执行在`execute()`的调用线程。
+
+```
+ @MainThread
+    public final AsyncTask<Params, Progress, Result> execute(Params... params) {
+        return executeOnExecutor(sDefaultExecutor, params);
+    }
+
+ @MainThread
+    public final AsyncTask<Params, Progress, Result> executeOnExecutor(Executor exec,
+            Params... params) {
+        if (mStatus != Status.PENDING) {
+            switch (mStatus) {
+                case RUNNING:
+                    throw new IllegalStateException("Cannot execute task:"
+                            + " the task is already running.");
+                case FINISHED:
+                    throw new IllegalStateException("Cannot execute task:"
+                            + " the task has already been executed "
+                            + "(a task can be executed only once)");
+            }
+        }
+
+        mStatus = Status.RUNNING;
+
+        onPreExecute();
+
+        mWorker.mParams = params;
+        exec.execute(mFuture);
+
+        return this;
+    }
+
+
+```
+
