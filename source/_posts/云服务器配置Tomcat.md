@@ -1,7 +1,7 @@
 ---
 title: 云服务器配置Tomcat
 photos:
-   - '/img/pictures/picture9.jpg'
+   - '/img/pictures/picture19.jpg'
 date: 2017-09-05 11:35:20
 tags: [Server]
 categories: [Server]

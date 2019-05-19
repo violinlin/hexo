@@ -1,7 +1,7 @@
 ---
 title: Toolbar的使用
 photos:
-  - '/img/pictures/picture5.jpg'
+  - '/img/pictures/picture15.jpg'
 date: 2017-04-19 20:44:39
 tags: [Android,MD]
 ---
@@ -11,7 +11,9 @@ tags: [Android,MD]
 <!--more-->
 
 对于`Toolbar`Google给开发者留了很多可定制修改的余地。[官方文档](https://developer.android.google.cn/reference/android/support/v7/widget/Toolbar.html)
-![](http://upload-images.jianshu.io/upload_images/2352140-4f074872909d1528.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![](/img/Toolbar_api.png)
+
 * 设置导航按键
 * 设置程序Logo
 * 设置主/副标题
@@ -63,7 +65,7 @@ tags: [Android,MD]
 ```
 
 程序预览
-![](http://upload-images.jianshu.io/upload_images/2352140-d20d494edc2c726f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](/img/Toolbar_1.png)
 
 ## 2. 标题字体样式的自定义
 
@@ -154,7 +156,7 @@ tags: [Android,MD]
         return super.onOptionsItemSelected(item);
     }
 ```
-![](http://upload-images.jianshu.io/upload_images/2352140-9fcebbbe943b45f4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](/img/Toolbar_2.png)
 
 ## 4. Action Menu样式的自定义
 
@@ -229,10 +231,13 @@ tags: [Android,MD]
     }
 ```
 在手机上运行显示截图如下
-![](http://upload-images.jianshu.io/upload_images/2352140-6c4b816f22cae5b7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](/img/Toolbar_3.png)
 
 
-![](http://upload-images.jianshu.io/upload_images/2352140-e9b65cd457e7d61f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](/img/Toolbar_4.png)
 
 ## 5. 关于主标题的显示问题
-因为在代码中通过` setSupportActionBar(toolbar);`将`Toolbar`设置成了`ActionBar`,所以如果没有没置`Toolbar`的主标题，或者主标题设置为了空`app:title=""`，系统会获取`Activity`的`lable`字段设置为主标题。如果`Activity`的`lable`为空则会获取`application`的`label`字段设置`title`。解决这个问题需要在代码中添加`getSupportActionBar().setDisplayShowTitleEnabled(false);`
+
+> 因为在代码中通过` setSupportActionBar(toolbar);`将`Toolbar`设置成了`ActionBar`,所以如果没有没置`Toolbar`的主标题，或者主标题设置为了空`app:title=""`，系统会获取`Activity`的`lable`字段设置为主标题。如果`Activity`的`lable`为空则会获取`application`的`label`字段设置`title`。
+> 解决这个问题，需要在代码中添加
+`getSupportActionBar().setDisplayShowTitleEnabled(false);`

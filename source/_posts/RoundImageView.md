@@ -1,7 +1,7 @@
 ---
 title: RoundImageView
 photos:
-   - '/img/pictures/picture1.jpg'
+   - '/img/pictures/picture21.jpg'
 date: 2018-03-14 11:21:06
 tags: [Android,自定义view]
 categories: [Android]

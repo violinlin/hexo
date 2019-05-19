@@ -1,7 +1,7 @@
 ---
 title: Volley
 photos:
-  - '/img/pictures/picture6.jpg'
+  - '/img/pictures/picture16.jpg'
 date: 2016-09-17 21:38:58
 tags: [Android基础]
 categories: [Android]

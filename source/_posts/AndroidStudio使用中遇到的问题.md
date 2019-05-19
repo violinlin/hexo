@@ -12,11 +12,11 @@ photos:
 
 ## 布局预览问题
 今天打开AndroidStudio突然发现布局文件没有了预览，显示是这个样子的：
-![](/img/problem/preview1.PNG)
+![](/img/layoutbug_preview1.png)
 后来发现发现是自己下载了API24的SDK Platform，AS在预览是会自动选择本地最新版的SDK版本。好了，那么解决问题的方法就是把预览的版本调低就可以了。
 åç
-![](/img/list.png)
+![](/img/layoutbug_list.png)
 
 效果如下
 
-![](/img/normal.png)
+![](/img/layoutbug_normal.png)

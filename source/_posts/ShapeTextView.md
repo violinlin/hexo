@@ -1,7 +1,7 @@
 ---
 title: ShapeTextView
 photos:
-  - '/img/pictures/picture3.jpg'
+  - '/img/pictures/picture23.jpg'
 date: 2017-05-04 13:46:22
 tags: [Android,自定义view]
 ---

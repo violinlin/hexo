@@ -1,7 +1,7 @@
 ---
 title: AS2.3后找不到SDKManager启动按钮解决方法
 photos:
-   - '/img/pictures/picture2.jpg'
+   - '/img/pictures/picture12.jpg'
 date: 2017-10-09 15:01:57
 tags: [AndroidStudio]
 categories:

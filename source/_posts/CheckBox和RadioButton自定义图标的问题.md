@@ -1,7 +1,7 @@
 ---
 title: CheckBox和RadioButton自定义图标的问题
 photos:
-  - '/img/pictures/picture9.jpg'
+  - '/img/pictures/picture19.jpg'
 date: 2016-08-19 11:36:50
 tags: [Android,bug]
 ---
@@ -41,7 +41,7 @@ tags: [Android,bug]
 
 这种方法看上去还不错，万万没想到碰到一个诡异的bug,问题是这样的
 左边是异常情况，图片遮住了文字。右边是正常显示情况。
-![](http://upload-images.jianshu.io/upload_images/2352140-d3dd97da9e7f4d8c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](/img/CheckBox.png)
 刚开始以为是屏幕适配的问题，也按着这个思路去解决了。但是后来发现在4.4及以上的系统上没有问题（没那么多系统的手机，4.4及以上没发现问题,唯一有的低版本4.0和4.2都有这个bug）。要是通过`paddingLeft`属性处理的话在高版本的系统上又会显得间距较大。
 后来又惊奇的发现如果继承的是`Activity`的话在低版本的手机上会出现同样的问题，如果继承的是v7包里的`AppCompatActivity`则问题没有再出现。**是代码的bug么，问题应该是paddingLeft计算的起始位置不同，跪求解答啊**。无奈由于一些原因我们代码只能继承Activity，so使用另一种方法吧。
 

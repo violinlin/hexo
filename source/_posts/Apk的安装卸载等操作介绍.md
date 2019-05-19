@@ -1,7 +1,7 @@
 ---
 title: Apk的安装卸载等操作介绍
 photos:
-   - '/img/pictures/picture1.jpg'
+   - '/img/pictures/picture11.jpg'
 date: 2016-09-19 13:45:01
 tags: [Android]
 ---

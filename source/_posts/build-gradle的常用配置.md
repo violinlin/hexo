@@ -1,7 +1,7 @@
 ---
 title: build.gradle的常用配置
 photos:
-  - '/img/pictures/picture6.jpg'
+  - '/img/pictures/picture16.jpg'
 date: 2018-03-26 16:27:53
 tags: [gradle]
 categories: [Android]

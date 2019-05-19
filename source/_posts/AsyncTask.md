@@ -1,7 +1,7 @@
 ---
 title: AsyncTask
 photos:
-  - '/img/pictures/picture3.jpg'
+  - '/img/pictures/picture13.jpg'
 date: 2016-09-18 22:24:35
 tags: [Android基础]
 categories: [Android]

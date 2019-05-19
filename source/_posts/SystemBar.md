@@ -1,7 +1,7 @@
 ---
 title: SystemBar
 photos:
-  - '/img/pictures/picture4.jpg'
+  - '/img/pictures/picture14.jpg'
 date: 2017-04-25 14:32:18
 tags: [Android,MD]
 ---

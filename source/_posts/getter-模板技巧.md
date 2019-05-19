@@ -1,7 +1,7 @@
 ---
 title: getter()模板技巧
 photos:
-  - '/img/pictures/picture10.jpg'
+  - '/img/pictures/picture20.jpg'
 date: 2018-04-08 15:52:22
 tags: [AndroidStudio]
 categories:

@@ -1,7 +1,7 @@
 ---
 title: 云服务器配置JDK
 photos:
-  - '/img/pictures/picture8.jpg'
+  - '/img/pictures/picture18.jpg'
 date: 2017-09-03 00:29:45
 tags: [Server]
 categories: [Server]

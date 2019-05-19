@@ -1,7 +1,7 @@
 ---
 title: 关于EditText的使用技巧
 photos:
-  - '/img/pictures/picture10.jpg'
+  - '/img/pictures/picture20.jpg'
 date: 2016-09-17 22:03:07
 tags: [Android基础]
 categories: [Android]

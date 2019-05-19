@@ -1,5 +1,5 @@
 ---
-title: 关于TextViewt的使用技巧
+title: 关于TextView的使用技巧
 photos:
   - '/img/pictures/picture3.jpg'
 date: 2016-09-17 22:11:53
