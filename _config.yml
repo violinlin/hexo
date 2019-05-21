@@ -77,8 +77,11 @@ limit: 10000
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy: 
-  type: git
+- type: git
   repo: https://github.com/violinlin/violinlin.github.io.git
+
+- type: git
+  repo: git@git.dev.tencent.com:violinlin/violinlin.coding.me.git
 
 
 # 自动生成sitemap
