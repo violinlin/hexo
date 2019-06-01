@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db97beae-f662-4f12-bbf9-ba3ed7a89c07" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/source/img/debug_adb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/img/debug_attach.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/img/debug_device.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/img/debug_run.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/img/debug_wait.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/img/pallete_show.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/next/_config.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,72 +16,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/_posts/Android调试技巧.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="295">
-                <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
-              </first_editor>
-              <second_editor>
-                <markdownNavigatorState />
-              </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/img/debug_attach.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/img/debug_adb.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_posts/AS2-3后找不到SDKManager启动按钮解决方法.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="75">
-                <caret line="5" column="20" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="20" />
-              </first_editor>
-              <second_editor>
-                <markdownNavigatorState />
-              </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_posts/AndroidStudio快捷键总结.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="285">
-                <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-              </first_editor>
-              <second_editor>
-                <markdownNavigatorState />
-              </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_posts/Android渠道打包.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="165">
-                <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="11" />
-              </first_editor>
-              <second_editor>
-                <markdownNavigatorState />
-              </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/_posts/Android-资源分包.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
@@ -99,11 +28,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_posts/Android-M新特性.md">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/_posts/Android-Palette调色板使用简介.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor />
+              <first_editor relative-caret-position="448">
+                <caret line="53" column="1" lean-forward="true" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+              </first_editor>
               <second_editor>
                 <markdownNavigatorState />
               </second_editor>
@@ -112,11 +43,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_posts/adb常用命令总结.md">
+        <entry file="file://$PROJECT_DIR$/source/_posts/Toolbar的使用.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="75">
-                <caret line="5" column="18" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="18" />
+              <first_editor relative-caret-position="105">
+                <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="11" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -129,8 +60,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>violin的</find>
-      <find>sidebar.display</find>
       <find>post</find>
       <find>normal</find>
       <find>disqus</find>
@@ -148,7 +77,6 @@
       <find>push.zhanzhang.baidu.com/push.js</find>
       <find>AsynTa</find>
       <find>bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';</find>
-      <find>baidu_push</find>
       <find>layout</find>
       <find>post_asset_folder</find>
       <find>hm.baidu.com/hm.js</find>
@@ -159,6 +87,9 @@
       <find>054312201de1069a3366cd586adea8bc</find>
       <find>baidu_analytics</find>
       <find>ana</find>
+      <find>bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';</find>
+      <find>theme.baidu_push</find>
+      <find>baidu_push</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -169,7 +100,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/source/_posts/关于MeasureSpec.md" />
         <option value="$PROJECT_DIR$/source/_posts/关于shape-selector-style.md" />
         <option value="$PROJECT_DIR$/source/_posts/简单聊聊Android程序的运行内存.md" />
         <option value="$PROJECT_DIR$/source/_posts/自定义View–绘制钟表.md" />
@@ -220,14 +150,13 @@
         <option value="$PROJECT_DIR$/public/sitemap.xml" />
         <option value="$PROJECT_DIR$/themes/next/_config.yml" />
         <option value="$PROJECT_DIR$/source/_posts/Android调试技巧.md" />
+        <option value="$PROJECT_DIR$/source/_posts/Android-Palette调色板使用简介.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="143" />
-    <option name="y" value="23" />
-    <option name="width" value="1403" />
-    <option name="height" value="777" />
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -245,34 +174,19 @@
             <path>
               <item name="hexo" type="b2602c69:ProjectViewProjectNode" />
               <item name="hexo" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hexo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hexo" type="462c0819:PsiDirectoryNode" />
-              <item name="scaffolds" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hexo" type="b2602c69:ProjectViewProjectNode" />
               <item name="hexo" type="462c0819:PsiDirectoryNode" />
               <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="_posts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hexo" type="b2602c69:ProjectViewProjectNode" />
               <item name="hexo" type="462c0819:PsiDirectoryNode" />
               <item name="source" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hexo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hexo" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hexo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hexo" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="next" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -290,16 +204,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source/_drafts" />
+      <recent name="$PROJECT_DIR$/themes/next/source" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/source/img" />
       <recent name="$PROJECT_DIR$/source" />
       <recent name="$PROJECT_DIR$/themes/next/source/images/pictures" />
       <recent name="$PROJECT_DIR$/source/img/pictures" />
       <recent name="$PROJECT_DIR$/source/img/photos" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/source/_drafts" />
-      <recent name="$PROJECT_DIR$/themes/next/source" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -340,7 +254,10 @@
       <workItem from="1557987542282" duration="15761000" />
       <workItem from="1558335137521" duration="1742000" />
       <workItem from="1558339138589" duration="4136000" />
-      <workItem from="1559122518762" duration="5899000" />
+      <workItem from="1559122518762" duration="6038000" />
+      <workItem from="1559180561461" duration="473000" />
+      <workItem from="1559267039928" duration="191000" />
+      <workItem from="1559295664933" duration="3367000" />
     </task>
     <task id="LOCAL-00001" summary="项目迁移">
       <created>1555288447541</created>
@@ -454,16 +371,24 @@
       <option name="project" value="LOCAL" />
       <updated>1558404819165</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Android调试技巧添加">
+      <created>1559139438728</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1559139438728</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58930000" />
+    <option name="totallyTimeSpent" value="63100000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14694202" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.119142175" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -474,9 +399,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.725973" weight="0.48219177" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.8872121" visible="true" weight="0.16849315" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.112787925" side_tool="true" visible="true" weight="0.16849315" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.7243844" weight="0.62739724" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.8848292" visible="true" weight="0.09589041" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.11517077" side_tool="true" visible="true" weight="0.09589041" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -542,15 +467,10 @@
     <MESSAGE value="分类修改" />
     <MESSAGE value="草稿箱文件添加" />
     <MESSAGE value="coding地址添加" />
-    <option name="LAST_COMMIT_MESSAGE" value="coding地址添加" />
+    <MESSAGE value="Android调试技巧添加" />
+    <option name="LAST_COMMIT_MESSAGE" value="Android调试技巧添加" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/img/connect.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/img/layoutbug_list.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/_posts/AndroidStudio使用中遇到的问题.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
@@ -592,18 +512,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/Toolbar的使用.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="340">
-            <caret line="27" column="11" lean-forward="true" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/img/Toolbar_4.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -618,13 +526,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/img/Toolbar_api.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/next/layout/_third-party/seo/baidu-push.swig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_drafts/test.md" />
     <entry file="file://$PROJECT_DIR$/scaffolds/page.md">
@@ -839,13 +740,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/next/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4320">
-          <caret line="288" column="15" selection-start-line="288" selection-end-line="288" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/_posts/关于EditText的使用技巧.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
@@ -883,37 +777,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/Android-资源分包.md">
+    <entry file="file://$PROJECT_DIR$/source/_posts/Android调试技巧.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/Android-M新特性.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/adb常用命令总结.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="75">
-            <caret line="5" column="18" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="18" />
+          <first_editor relative-caret-position="388">
+            <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
           </second_editor>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/img/debug_attach.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/categories/Android/page/2/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5115">
+          <caret line="341" column="12" selection-start-line="341" selection-start-column="12" selection-end-line="341" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/layout/_third-party/seo/baidu-push.swig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-start-column="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/img/debug_adb.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_posts/AS2-3后找不到SDKManager启动按钮解决方法.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
@@ -951,17 +845,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/img/debug_adb.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/img/debug_attach.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/Android调试技巧.md">
+    <entry file="file://$PROJECT_DIR$/source/_posts/Android-M新特性.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="295">
-            <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
+          <first_editor />
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/adb常用命令总结.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="75">
+            <caret line="5" column="18" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="18" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="426" selection-start-line="426" selection-end-line="426" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/Android-资源分包.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/Toolbar的使用.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="105">
+            <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="11" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/Android-Palette调色板使用简介.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="448">
+            <caret line="53" column="1" lean-forward="true" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
