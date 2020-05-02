@@ -165,10 +165,10 @@ context.startService-->onCreat()(只执行一次)-->onstartCommand()-->Service R
 ```java
 unbindService(mServiceConnection);
 ```
-context.bindService-->onCreat()(只执行一次)-->onBind()(只绑定一次)-->ServiceRunning-->onUnBind()-->onDestory()(只执行一次)-->Service Stop
+context.bindService-->onCreat()(只执行一次)-->onBind()(只绑定一次)-->ServiceRunning-->onUnBind()-->onDestroy()(只执行一次)-->Service Stop
 
-**PS:可以通过Service.stopSelf()方法或者Service.stopSelfResult()方法来停止自己，只要调用一次stopService()方法便可以停止服务，无论调用了多少次的启动服务方法**
-
+**PS:通过`startService()`启动的服务需要通过`stopService()`方法关闭，也可以通过`stopSelf()`方法，功能和`startService()`相同；
+通过`bindService()`启动的服务需要通过`unindService()`方法关闭；当一个服务即通过`startService()`方法启动又通过`bindService()`方法启动，那么关闭时也需要调用两种方式的关闭方法才能停止服务。**
 
 
 
@@ -210,3 +210,51 @@ context.bindService-->onCreat()(只执行一次)-->onBind()(只绑定一次)-->S
 | START_NOT_STICKY 非粘性标识 | “非粘性的”。使用这个返回值时，如果在执行完onStartCommand后，服务被异常kill掉，系统不会自动重启该服务。| 
 | START_REDELIVER_INTENT 带数据的粘性标识 | 重传Intent。使用这个返回值时，如果在执行完onStartCommand后，服务被异常kill掉，系统会自动重启该服务，并将Intent的值传入| 
 
+## 前台服务
+
+> 后台的服务进程是很容易被回收的，为了保证服务的稳定运行，可以使用前台服务。前台服务会有一个正在运行的图标在系统的状态栏显示，类似于通知效果。当服务取消时，图标会自动消失。
+
+和创建通知时的代码相似，不过不同于通知使用`NotificationManager`的`notify()`方法，使用前台服务需要使用`Service`的`startForeground()`方法。代码如下，可以在服务的`onCreate()`中设置前台服务
+
+```kotlin
+ String notifyChannel = "service";
+        NotificationManager manager = (NotificationManager) getSystemService(
+                Context.NOTIFICATION_SERVICE);
+        /**
+         * 8.0及以上系统需要配置NotificationChannel
+         * 如果没配置，{@link #startForeground(int, Notification)}
+         * 会抛出 invalid channel for service notification 异常
+         *
+         */
+        if (Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            //channelname 用户可以在设置界面调整不同渠道的通知显示信息
+            NotificationChannel notificationChannel = new NotificationChannel(notifyChannel,
+                    "service", NotificationManager.IMPORTANCE_HIGH);
+
+            manager.createNotificationChannel(notificationChannel);
+        }
+
+        Intent intent = new Intent(this,ServiceActivity.class);
+
+
+        PendingIntent pendingIntent = PendingIntent.getActivity(this,0,intent,0);
+
+        Notification preNTF = new NotificationCompat.Builder(getApplicationContext(),
+                notifyChannel)//notifyChannel 需要和 NotificationChannel中设置相同，通知才会弹出
+                .setContentTitle("service" )
+                .setContentText("message")
+                .setSmallIcon(getApplicationContext().getApplicationInfo().icon)
+                .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.test1))
+                .setContentIntent(pendingIntent)
+                .setStyle(new NotificationCompat.BigPictureStyle().bigPicture(BitmapFactory.decodeResource(getResources(), R.drawable.picture1)))
+                .setAutoCancel(true)
+                .build();
+
+
+        startForeground(1000, preNTF);//每个notifyID 对应一条通知，如果id相同，会在原来通知面板上更新内容
+```
+**PS:使用前台服务需要在清单文件中申明`FOREGROUND_SERVICE`权限**
+
+```xml
+ <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+```
