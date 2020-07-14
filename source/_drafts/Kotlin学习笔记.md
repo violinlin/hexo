@@ -36,3 +36,7 @@ val sum = { x: Int, y: Int -> x + y }
 println(sum(1,2))
 3
 ```
+
+## kotlin高级函数 lambada
+
+> 匿名函数、lambada、::funName() 属于函数类型的对象，可以作为参数传递
