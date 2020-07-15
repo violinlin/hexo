@@ -39,8 +39,12 @@ D/whl: CActivity------onDestroy
 ```java
 D/whl: AActivity------onCreate
 D/whl: BActivity------onCreate
+// BActivity 已经在栈顶，再次启动BActivity
+D/whl: BActivity------onPause
 D/whl: BActivity------onNewIntent
+D/whl: BActivity------onResume
 ```
+
 
 ## Intent中配置FLAG
 > 关于Activity的启动模式除了在清单中静态配置`launchMode`之外，也可以在代码中通过设置Intent的FLAG动态设置。[官方文档](https://developer.android.google.cn/reference/android/content/Intent.html#setFlags%28int%29)

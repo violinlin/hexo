@@ -8,7 +8,6 @@ categories: [Android]
 ---
 
 <!--more-->
-
 # Activity 生命周期
 
 ![lifecycle](/img/activity_lifecycle.png)
@@ -33,6 +32,7 @@ D/Activity: MainActivity	onPause
 D/Activity: SecondActivity	onCreate
 D/Activity: SecondActivity	onStart
 D/Activity: SecondActivity	onResume
+D/Activity: MainActivity	onSaveInstanceState
 D/Activity: MainActivity	onStop
 ```
 3. 从`SecondActivity`退回到`MainActivity`
@@ -41,12 +41,52 @@ D/Activity: MainActivity	onStop
 
 ```java
 D/Activity: SecondActivity	onPause
+D/Activity: MainActivity	onReStart
 D/Activity: MainActivity	onStart
 D/Activity: MainActivity	onResume
 D/Activity: SecondActivity	onStop
 D/Activity: SecondActivity	onDestroy
 ```
 > 从日志也可以看出无论从A启动到B,还是从B退回到A,当前显示的Activity会先走`onPause()`方法，目标Activity才会走创建或者重新回到前台流程。所以`onPause()`方法中不适合做一些耗时操作，会影响下一个界面的打开。
+
+## onCreate -> onDestory() 创建销毁期
+
+> Activity 的创建和销毁回调
+
+## 可见生存期 onStart() -> onStop()
+
+> onStart()到onStop()之间，Activity对用户是可见的，当Activity调用onStop()后，说明该Activity位于后台用户不可见，这种状态极易被系统回收。
+
+## 前台生存期 onResume() -> onPause()
+
+> onResume() -> onPause() Activity属于前台运行状态，可以和用户进行交互
+
+## onReStart()
+
+> SecondActivity退出栈，MainActivity重新可见时，会调用onRestart() -> onStart() -> onResume()
+
+## onSaveInstanceState()
+
+> 在onStop()方法前调用，通过Bundle存数据，如果Activity被回收了，重新回退到该Activity时，可以在onCreate(Bundle bundle)中获取保存的数据
+
+## QA
+1. 在Activity中弹出一个Dialog，它的生命周期会怎么变化，如果启动一个Dialog主题的Activity呢？
+> 弹出Dialog生命周期不会变化，Dialog依赖于Activity，Activity并不会走onPause()方法
+
+> 启动一个Dialog主题的Activity，该Activity会走onPause()方法，但是因为没有完全被遮住，所以不会走onStop()方法
+
+2. 在Activity中启动一个Dialog主题的Activity，onSaveInstanceState()会被调用嘛
+> 会的，虽然onStop()方法后Activity才容易被回收，但是onSaveInstanceState()要早于onStop()调用，所以方法还是会被调用的，日志如下
+
+```
+D/MainActivity: onPause
+D/DialogActivity: onCreate
+D/DialogActivity: onStart
+D/DialogActivity: onResume
+D/MainActivity: onSaveInstanceState
+```
+
+
 
 
 # Activity 启动模式
