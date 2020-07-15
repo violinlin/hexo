@@ -3,7 +3,7 @@ title: Activity启动模式
 photos:
   - '/img/pictures/picture2.jpg'
 date: 2017-11-15 17:42:14
-tags: [Activity]
+tags: [Android基础,Activity]
 categories: [Android]
 ---
 

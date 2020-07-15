@@ -12,8 +12,8 @@ categories: [Android]
 用于管理生命周期较长的组件，如带有子线程管理的MediaPlayer、定时器等。
 
 <!--more-->
-
-## 通过`startService()`启动服务
+## 启动Service
+### 通过`startService()`启动服务
 
 > 新建Service的子类，重写一个抽象方法（onBind( )），和三个核心的生命周期方法 onCreate()，onStartCommand()， onDestroy()。通过日志观察服务的生命周期 。**Ps:服务需要到清单文件中注册** 
 
@@ -78,18 +78,18 @@ public class MyService extends Service {
 > 运行日志如下
 
 ```
-4-12 14:56:26.707 28721-28721/com.violin.violindemo D/com.violin.service.MyService: onCreate
-04-12 14:56:26.709 28721-28721/com.violin.violindemo D/com.violin.service.MyService: onStartCommand
-04-12 14:58:36.542 28721-28721/com.violin.violindemo D/com.violin.service.MyService: onStartCommand
-04-12 14:59:19.694 28721-28721/com.violin.violindemo D/com.violin.service.MyService: onDestroy
+D/com.violin.service.MyService: onCreate
+D/com.violin.service.MyService: onStartCommand
+D/com.violin.service.MyService: onStartCommand
+D/com.violin.service.MyService: onDestroy
 ```
 
 **服务的创建`onCreate()`和销毁`onDestory()`只执行一次，执行多少次`content.startService()`服务里的`onStartCommand()`就会被调用几次**
 
-context.startService-->onCreat()(只执行一次)-->onstartCommand()-->Service Running-->context.stopService()-->onDestory()(只执行一次)-->Service Stop
+> context.startService-->onCreat()(只执行一次)-->onstartCommand()-->Service Running-->context.stopService()-->onDestory()(只执行一次)-->Service Stop
 
 
-## 通过`bindService()`启动服务
+### 通过`bindService()`启动服务
 > 通过`startService()`方法启动服务后，服务将一直处于运行状态，但是具体的运行逻辑`Activity`控制不了。如果需要实现`Service`和`Activity`中间的交互，需要通过`bindService()`方式启动。
 
 新建`MyService`的时候会重写`onBind()`方法，上面通过`startService()`方式启动并不会调用此方法，只用通过`bindService()`方法启动，在`Actiivty`和`Service`之间绑定时`onBind()`方法才会被调用。
@@ -167,12 +167,14 @@ unbindService(mServiceConnection);
 ```
 context.bindService-->onCreat()(只执行一次)-->onBind()(只绑定一次)-->ServiceRunning-->onUnBind()-->onDestroy()(只执行一次)-->Service Stop
 
-**PS:通过`startService()`启动的服务需要通过`stopService()`方法关闭，也可以通过`stopSelf()`方法，功能和`startService()`相同；
-通过`bindService()`启动的服务需要通过`unindService()`方法关闭；当一个服务即通过`startService()`方法启动又通过`bindService()`方法启动，那么关闭时也需要调用两种方式的关闭方法才能停止服务。**
+
+* 通过`startService()`启动的服务需要通过`stopService()`方法关闭，也可以通过`stopSelf()`方法，功能和`stopService()`相同；
+* 通过`bindService()`启动的服务需要通过`unindService()`方法关闭；
+* 当一个服务即通过`startService()`方法启动又通过`bindService()`方法启动，那么关闭时也需要调用两种方式的关闭方法才能停止服务。
 
 
 
-### 绑定的服务类型
+#### 绑定的服务类型
 
 | 名称      |    作用 |   
 | :-------- | --------:| 
@@ -194,9 +196,67 @@ context.bindService-->onCreat()(只执行一次)-->onBind()(只绑定一次)-->S
  **其生命周期方法：**
  * onCreate()
  * onStartCommand()
- * 	onHandleIntent() 在子线程中执行的方法
- *  onDestroy()
- 创建IntentService子类时，需要提供一个无参的构造方法且调用super(name)子线程的名称，如果没有无参数的构造方法清单文件注册Service时会报错
+ * onHandleIntent() 在子线程中执行的方法
+ * onDestroy()
+ 
+
+> 创建IntentService子类时，需要提供一个无参的构造方法且调用super(name)子线程的名称，如果没有无参数的构造方法清单文件注册Service时会报错
+ 
+### 源码分析
+
+1. onCreate时会通过HandlerThread初始化Looper和开启线程，同时创建ServiceHandler处理消息
+```
+   @Override
+    public void onCreate() {
+        // TODO: It would be nice to have an option to hold a partial wakelock
+        // during processing, and to have a static startService(Context, Intent)
+        // method that would launch the service & hand off a wakelock.
+
+        super.onCreate();
+        HandlerThread thread = new HandlerThread("IntentService[" + mName + "]");
+        thread.start();
+
+        mServiceLooper = thread.getLooper();
+        mServiceHandler = new ServiceHandler(mServiceLooper);
+    }
+```
+2. startService()启动服务后，会通过onStartCommand()调用onStart()方法，发送message消息
+```
+ @Override
+    public void onStart(@Nullable Intent intent, int startId) {
+        Message msg = mServiceHandler.obtainMessage();
+        msg.arg1 = startId;
+        msg.obj = intent;
+        mServiceHandler.sendMessage(msg);
+    }
+
+    /**
+     * You should not override this method for your IntentService. Instead,
+     * override {@link #onHandleIntent}, which the system calls when the IntentService
+     * receives a start request.
+     * @see android.app.Service#onStartCommand
+     */
+    @Override
+    public int onStartCommand(@Nullable Intent intent, int flags, int startId) {
+        onStart(intent, startId);
+        return mRedelivery ? START_REDELIVER_INTENT : START_NOT_STICKY;
+    }
+```
+3. handler在收到onStartCommand()发送过来的message后，会通过onHandleIntent处理消息
+```
+  private final class ServiceHandler extends Handler {
+        public ServiceHandler(Looper looper) {
+            super(looper);
+        }
+
+        @Override
+        public void handleMessage(Message msg) {
+            onHandleIntent((Intent)msg.obj);
+            stopSelf(msg.arg1);
+        }
+    }
+
+```
  
  **不建议通过bindService来启动IntentService,因为IntentService是在子线程中执行，而且bindService()启动不会执行onStartCommand()方法，没有了IntentService的设计初衷**
 

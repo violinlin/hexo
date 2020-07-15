@@ -3,7 +3,7 @@ title: Activity
 photos:
   - '/img/pictures/picture1.jpg'
 date: 2016-09-18 22:32:40
-tags: [Activity]
+tags: [Android基础,Activity]
 categories: [Android]
 ---
 
@@ -49,30 +49,31 @@ D/Activity: SecondActivity	onDestroy
 ```
 > 从日志也可以看出无论从A启动到B,还是从B退回到A,当前显示的Activity会先走`onPause()`方法，目标Activity才会走创建或者重新回到前台流程。所以`onPause()`方法中不适合做一些耗时操作，会影响下一个界面的打开。
 
-## onCreate -> onDestory() 创建销毁期
+## 生命周期分类
+
+### onCreate -> onDestory() 创建销毁期
 
 > Activity 的创建和销毁回调
 
-## 可见生存期 onStart() -> onStop()
+### 可见生存期 onStart() -> onStop()
 
 > onStart()到onStop()之间，Activity对用户是可见的，当Activity调用onStop()后，说明该Activity位于后台用户不可见，这种状态极易被系统回收。
 
-## 前台生存期 onResume() -> onPause()
+### 前台生存期 onResume() -> onPause()
 
 > onResume() -> onPause() Activity属于前台运行状态，可以和用户进行交互
 
-## onReStart()
+### onReStart()
 
 > SecondActivity退出栈，MainActivity重新可见时，会调用onRestart() -> onStart() -> onResume()
 
-## onSaveInstanceState()
+### onSaveInstanceState()
 
 > 在onStop()方法前调用，通过Bundle存数据，如果Activity被回收了，重新回退到该Activity时，可以在onCreate(Bundle bundle)中获取保存的数据
 
 ## QA
 1. 在Activity中弹出一个Dialog，它的生命周期会怎么变化，如果启动一个Dialog主题的Activity呢？
 > 弹出Dialog生命周期不会变化，Dialog依赖于Activity，Activity并不会走onPause()方法
-
 > 启动一个Dialog主题的Activity，该Activity会走onPause()方法，但是因为没有完全被遮住，所以不会走onStop()方法
 
 2. 在Activity中启动一个Dialog主题的Activity，onSaveInstanceState()会被调用嘛
@@ -93,13 +94,23 @@ D/MainActivity: onSaveInstanceState
 
 ![launch mode](/img/launchmode.png)
 
-# onNewIntent方法的执行时机
+## onNewIntent方法的执行时机
+1. 当Activity的启动模式为SingleTop
+> 如果目标Activity位于栈顶，此时再次启动该Activity，不会创建新的Activity，该Activity的onNewIntent()方法会被调用
+2. 当Activity的启动模式为SingleTask
+> 如果栈中已经有目标Activity了，再次启动目标Activity，会先将目标Activity上的Activity全部出栈，然后调用目标Activity的onNewIntent()方法
+3. 当Activity的启动模式为SingleInstance
+> 如果已经创建过目标Activity，再次启动目标Activity，目标Activity会切换到前台，然后调用目标Activity的onNewIntent()方法，因为他是单独一个栈，所以不会使其他Activity出栈
 
-```java
-当此Activity的实例已经存在，并且此时的启动模式为SingleTask和SingleInstance，另外当这个实例位于栈顶且启动模式为SingleTop时也会触发onNewInstent()。
+```
+D/MainActivity: onPause
+D/MainActivity: onNewIntent
+D/MainActivity: onResume
 ```
 
-# Activity 启动异常
+## Activity常见异常问题
+
+## Activity 启动异常
 
 > 通过隐式意图启动Activity时需要处理一些异常情况，例如目标Activity不存在、没有打开权限等。
 
