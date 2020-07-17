@@ -257,6 +257,9 @@ context.bindService-->onCreat()(只执行一次)-->onBind()(只绑定一次)-->S
     }
 
 ```
+
+> 如果handlerIntent()中正在执行耗时任务，此时，又通过startService()发来新的任务，那么新的任务会通过sendMessage()形式放入到Looper的MessageQueue中。
+等上一个任务完成后。顺序执行。等所有任务执行完毕，服务才会onDestroy()销毁。
  
  **不建议通过bindService来启动IntentService,因为IntentService是在子线程中执行，而且bindService()启动不会执行onStartCommand()方法，没有了IntentService的设计初衷**
 
