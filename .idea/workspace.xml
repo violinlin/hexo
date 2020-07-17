@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="db97beae-f662-4f12-bbf9-ba3ed7a89c07" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/Activity.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/Activity.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/Activity启动模式.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/Activity启动模式.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/AsyncTask.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/AsyncTask.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,20 +17,53 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/next/layout/_partials/head.swig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="107" column="4" selection-start-line="107" selection-start-column="4" selection-end-line="107" selection-end-column="4" />
+        <entry file="file://$PROJECT_DIR$/source/_posts/Activity.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="135">
+                <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="11" />
+              </first_editor>
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_posts/Activity.md">
+        <entry file="file://$PROJECT_DIR$/source/_posts/Activity启动模式.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1445">
-                <caret line="102" lean-forward="true" selection-start-line="102" selection-end-line="102" />
+              <first_editor relative-caret-position="75">
+                <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+              </first_editor>
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_posts/Service.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="3675">
+                <caret line="245" selection-start-line="245" selection-end-line="245" />
+              </first_editor>
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_posts/Fragment.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="285">
+                <caret line="19" selection-start-line="19" selection-end-line="19" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -41,11 +73,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/_posts/Activity启动模式.md">
+        <entry file="file://$PROJECT_DIR$/source/_posts/AsyncTask.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="202">
-                <caret line="94" column="23" lean-forward="true" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="23" />
+              <first_editor relative-caret-position="306">
+                <caret line="234" column="79" selection-start-line="234" selection-start-column="79" selection-end-line="234" selection-end-column="79" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -55,22 +87,17 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/next/layout/_partials/header.swig">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/next/layout/_layout.swig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+        <entry file="file://$PROJECT_DIR$/source/_drafts/Fragment.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="120">
+                <caret line="8" selection-start-line="8" selection-end-line="8" />
+              </first_editor>
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/next/layout/post.swig">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -145,8 +172,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/themes/next/layout/_third-party/analytics/busuanzi-counter.swig" />
-        <option value="$PROJECT_DIR$/source/_posts/Android-M新特性.md" />
         <option value="$PROJECT_DIR$/source/_posts/Android渠道打包.md" />
         <option value="$PROJECT_DIR$/source/_posts/布局优化.md" />
         <option value="$PROJECT_DIR$/source/_posts/开发一个Servlet项目.md" />
@@ -155,7 +180,6 @@
         <option value="$PROJECT_DIR$/themes/next/source/google8e4fc1cf0c629d7f.html" />
         <option value="$PROJECT_DIR$/source/_posts/Apk的安装卸载等操作介绍.md" />
         <option value="$PROJECT_DIR$/source/_posts/AS2-3后找不到SDKManager启动按钮解决方法.md" />
-        <option value="$PROJECT_DIR$/source/_posts/AsyncTask.md" />
         <option value="$PROJECT_DIR$/source/_posts/AS打没签名的APK包.md" />
         <option value="$PROJECT_DIR$/source/_posts/build-gradle的常用配置.md" />
         <option value="$PROJECT_DIR$/source/_posts/Charles-修改返回报文.md" />
@@ -189,20 +213,22 @@
         <option value="$PROJECT_DIR$/themes/next/layout/_partials/head.swig" />
         <option value="$PROJECT_DIR$/source/_posts/kotlin中init方法简介.md" />
         <option value="$PROJECT_DIR$/source/_posts/日常小总结.md" />
-        <option value="$PROJECT_DIR$/source/_posts/Service.md" />
         <option value="$PROJECT_DIR$/source/_drafts/Kotlin学习笔记.md" />
         <option value="$PROJECT_DIR$/source/_posts/面试总结.md" />
         <option value="$PROJECT_DIR$/source/_drafts/设计模式.md" />
         <option value="$PROJECT_DIR$/source/_drafts/面试总结.md" />
-        <option value="$PROJECT_DIR$/source/_posts/Activity.md" />
         <option value="$PROJECT_DIR$/source/_posts/Activity启动模式.md" />
+        <option value="$PROJECT_DIR$/source/_posts/Activity.md" />
+        <option value="$PROJECT_DIR$/source/_posts/Service.md" />
+        <option value="$PROJECT_DIR$/source/_drafts/Fragment.md" />
+        <option value="$PROJECT_DIR$/source/_posts/Fragment.md" />
+        <option value="$PROJECT_DIR$/source/_posts/AsyncTask.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="777" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -210,6 +236,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -226,6 +253,12 @@
               <item name="hexo" type="b2602c69:ProjectViewProjectNode" />
               <item name="hexo" type="462c0819:PsiDirectoryNode" />
               <item name="source" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hexo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hexo" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="_drafts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hexo" type="b2602c69:ProjectViewProjectNode" />
@@ -263,28 +296,27 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/source" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/source/_drafts" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/source" />
-      <recent name="$PROJECT_DIR$/source/img" />
-      <recent name="$PROJECT_DIR$/source/_drafts" />
-      <recent name="$PROJECT_DIR$/themes/next/source/images/pictures" />
-      <recent name="$PROJECT_DIR$/source/img/pictures" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/source/_drafts" />
       <recent name="$PROJECT_DIR$/themes/next/source" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source/_drafts" />
+      <recent name="$PROJECT_DIR$/source" />
+      <recent name="$PROJECT_DIR$/source/img" />
+      <recent name="$PROJECT_DIR$/themes/next/source/images/pictures" />
+      <recent name="$PROJECT_DIR$/source/img/pictures" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -341,7 +373,8 @@
       <workItem from="1592290086217" duration="2614000" />
       <workItem from="1593529163875" duration="55000" />
       <workItem from="1594117111446" duration="1808000" />
-      <workItem from="1594723251814" duration="4396000" />
+      <workItem from="1594723251814" duration="7456000" />
+      <workItem from="1594792341692" duration="4489000" />
     </task>
     <task id="LOCAL-00001" summary="项目迁移">
       <created>1555288447541</created>
@@ -497,16 +530,30 @@
       <option name="project" value="LOCAL" />
       <updated>1594723286817</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Activity update">
+      <created>1594785412463</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1594785412463</updated>
+    </task>
+    <task id="LOCAL-00024" summary="service update">
+      <created>1594789077494</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1594789077495</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83445000" />
+    <option name="totallyTimeSpent" value="90994000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1350278" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2152502" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -517,9 +564,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.71485305" visible="true" weight="0.46438357" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.86656076" weight="0.18978103" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.28514695" side_tool="true" visible="true" weight="0.46438357" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.7132645" visible="true" weight="0.31917807" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.86417794" weight="0.39041096" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.2867355" side_tool="true" visible="true" weight="0.31917807" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -601,26 +648,11 @@
     <MESSAGE value="daily modify" />
     <MESSAGE value="service modify" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="Activity update" />
+    <MESSAGE value="service update" />
+    <option name="LAST_COMMIT_MESSAGE" value="service update" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/baidusitemap.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/sitemap.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/_posts/关于EditText的使用技巧.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
@@ -846,18 +878,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/Service.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="23">
-            <caret line="235" selection-start-line="235" selection-end-line="235" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/_posts/面试总结.md" />
     <entry file="file://$PROJECT_DIR$/source/_posts/kotlin中init方法简介.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
@@ -957,6 +977,49 @@
     <entry file="file://$PROJECT_DIR$/themes/next/layout/post.swig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/layout/_partials/head.swig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1605">
+          <caret line="107" column="4" selection-start-line="107" selection-start-column="4" selection-end-line="107" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/Activity.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="11" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/Activity启动模式.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="75">
+            <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/Service.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="3675">
+            <caret line="245" selection-start-line="245" selection-end-line="245" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -977,18 +1040,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/next/layout/_partials/head.swig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="107" column="4" selection-start-line="107" selection-start-column="4" selection-end-line="107" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/Activity.md">
+    <entry file="file://$PROJECT_DIR$/source/_drafts/Fragment.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1445">
-            <caret line="102" lean-forward="true" selection-start-line="102" selection-end-line="102" />
+          <first_editor relative-caret-position="120">
+            <caret line="8" selection-start-line="8" selection-end-line="8" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
@@ -996,11 +1052,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/Activity启动模式.md">
+    <entry file="file://$PROJECT_DIR$/source/_posts/Fragment.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="202">
-            <caret line="94" column="23" lean-forward="true" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="23" />
+          <first_editor relative-caret-position="285">
+            <caret line="19" selection-start-line="19" selection-end-line="19" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/AsyncTask.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="306">
+            <caret line="234" column="79" selection-start-line="234" selection-start-column="79" selection-end-line="234" selection-end-column="79" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />

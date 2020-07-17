@@ -6,17 +6,20 @@ date: 2016-09-18 22:24:35
 tags: [Android基础]
 categories: [Android]
 ---
-> AsyncTack是对Thread+Handler良好的封装，用来执行异步任务
+
+> AsyncTack是对Thread+Handler良好的封装，代码使用了`SerialExecutor`和`THREAD_POOL_EXECUTOR`两个线程池，分别用来做添加任务和执行任务的工作，使用了`InternalHandler`在线程之间通信。
 
 <!--more-->
 
-三种泛型参数类型分别代表“启动任务执行的输入参数”、“后台任务执行的进度”、“后台计算结果的类型”。在特定场合下，并不是所有类型都被使用，如果没有被使用，可以用java.lang.Void类型代替。
+# 使用解析
+
+AsyncTask的三种泛型参数类型分别代表“启动任务执行的输入参数”、“后台任务执行的进度”、“后台计算结果的类型”。在特定场合下，并不是所有类型都被使用，如果没有被使用，可以用java.lang.Void类型代替。
 
 ```java
     public abstract class AsyncTask<Params, Progress, Result>  
 ```
 
-# 一个异步任务的执行一般包括以下几个步骤：
+## 一个异步任务的执行一般包括以下几个步骤：
 
 1. execute(Params... params)，执行一个异步任务，需要我们在代码中调用此方法，触发异步任务的执行。
 
@@ -29,7 +32,7 @@ categories: [Android]
 5. onPostExecute(Result result)，当后台操作结束时，此方法将会被调用，计算结果将做为参数传递到此方法中，直接将结果显示到UI组件上。
 
 
-# 在使用的时候，有几点需要格外注意：
+## 在使用的时候，有几点需要格外注意：
 
 1.异步任务的实例一般在UI线程中创建。
 （它的内部使用Handler实现，需要Looper对象,也可以子线程中调用，后面会介绍到）
@@ -44,8 +47,9 @@ categories: [Android]
 
 
 
-## 补充
-1. 使用execute(),启动异步任务，任务串行执行（一个执行完才会执行另一个任务）源码实现如下
+# 代码解析
+
+## 使用execute(),启动异步任务，任务串行执行（一个执行完才会执行另一个任务）源码实现如下
 
 ```java
    public final AsyncTask<Params, Progress, Result> execute(Params... params) {
@@ -80,7 +84,7 @@ categories: [Android]
     
     
 ```
-> execute()方法的具体实现实在executeOnExecutor()方法中， onPreExecute()方法也在此处调用。任务的具体执行则在`sDefaultExecutor`中，这是一个`SerialExecutor`类型，源码如下
+> execute()方法的具体实现是在executeOnExecutor()方法中， onPreExecute()方法也在此处调用。具体任务会被封装在`mFuture`中，通过`SerialExecutor`来执行，看下`SerialExecutor`的源码。
 
 ```java
  private static class SerialExecutor implements Executor {
@@ -109,40 +113,86 @@ categories: [Android]
         }
     }
 ```
-> 如上，`executeOnExecutor()`中调用` exec.execute(mFuture)`方法，具体执行在`SerialExecutor`的`public synchronized void execute(final Runnable r)`
-方法中。它把每个任务添加到`mTasks`中，然后通过`scheduleNext（）`方法取出任务，并通过`THREAD_POOL_EXECUTOR`线程池来执行。每个任务的运行通过`try catch处理`，无论上个任务的运行结果，`scheduleNext()`都会在`finally()`中执行。
-`SerialExecutor`用来保证任务是串行执行。
+> `SerialExecutor`的`execute()`方法执行会首先将任务添加到`mTasks`阻塞队列里面，然后任务执行完成后，通过`scheduleNext()`方法，将下一个任务拿出，并通过`THREAD_POOL_EXECUTOR`线程池来做具体的执行逻辑。代码逻辑可以看到，一个任务执行完成后才会调用`scheduleNext()`方法继续下一个任务，**所以任务的执行是一个串行的逻辑**。
 
+再看下`THREAD_POOL_EXECUTOR`的源码
 
-
-2. 使用  task.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR,"Task"+i);启动异步任务，任务会并发执行（多个任务一起执行）
-
-> `executeOnExecutor()`启动方法会绕过`SerialExecutor`的逻辑，线程池会直接执行任务，并发的任务可以通过线程池控制，也可以自定义线程池
-
-3. AsyncTask 不适合耗时任务
-
-> AsyncTask 中任务的具体执行是通过 `threadPoolExecutor` 线程池，如下，非核心线程的超时时间为 3s,此外默认任务是串行执行，
-如果多个耗时任务的话效率也会比较低。
 ```java
-  private static final int CORE_POOL_SIZE = 1;
-    private static final int MAXIMUM_POOL_SIZE = 20;
-    private static final int BACKUP_POOL_SIZE = 5;
-    private static final int KEEP_ALIVE_SECONDS = 3;
-    
- static {
+  private static final int CORE_POOL_SIZE = Math.max(2, Math.min(CPU_COUNT - 1, 4));// 核心线程数[2、4]
+  private static final int MAXIMUM_POOL_SIZE = CPU_COUNT * 2 + 1;// 线程池最大线程个数
+  private static final int KEEP_ALIVE_SECONDS = 30;// 线程超时时间
+  private static final BlockingQueue<Runnable> sPoolWorkQueue =
+            new LinkedBlockingQueue<Runnable>(128); // 阻塞队列
+            
+  public static final Executor THREAD_POOL_EXECUTOR;
+
+  static {
         ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(
                 CORE_POOL_SIZE, MAXIMUM_POOL_SIZE, KEEP_ALIVE_SECONDS, TimeUnit.SECONDS,
-                new SynchronousQueue<Runnable>(), sThreadFactory);
-        threadPoolExecutor.setRejectedExecutionHandler(sRunOnSerialPolicy);
+                sPoolWorkQueue, sThreadFactory);
+        threadPoolExecutor.allowCoreThreadTimeOut(true);
         THREAD_POOL_EXECUTOR = threadPoolExecutor;
-    }
-
+  }
+    
 ```
-4. 子线程中是否可以启动AsyncTask？
+
+
+> `THREAD_POOL_EXECUTOR`的核心线程和最大线程数根据CPU个数来计算，核心线程数取值为[2,4]。阻塞队列大小为128个。
+
+> 由于`SerialExecutor`会将任务串行提交，所以不适合做一些耗时的任务，不然很可能第一个任务还没执行完，程序退出了，导致后面的任务都没有执行。
+
+
+## AsyncTask 任务能并行执行嘛？
+
+> AsyncTask默认串行执行主要是因为`SerialExecutor`会将任务串行提交。看下`executeOnExecutor()`方法，可以在这指定线程池，绕开`SerialExecutor`串行逻辑。
+ 
+```java
+    task.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR,"Task"+i);//启动异步任务，任务会并发执行（多个任务一起执行）,也可以自定义线程池。  
+```
+
+
+
+## 子线程中是否可以启动AsyncTask？
 
 > 可以启动，但是`onPreExecute`的方法执行在`execute()`的调用线程,`doInBackground()`方法仍然在线程池新建的线程中执行
+
+
+```java
+ @MainThread
+    public final AsyncTask<Params, Progress, Result> execute(Params... params) {
+        return executeOnExecutor(sDefaultExecutor, params);
+    }
+
+ @MainThread
+    public final AsyncTask<Params, Progress, Result> executeOnExecutor(Executor exec,
+            Params... params) {
+        if (mStatus != Status.PENDING) {
+            switch (mStatus) {
+                case RUNNING:
+                    throw new IllegalStateException("Cannot execute task:"
+                            + " the task is already running.");
+                case FINISHED:
+                    throw new IllegalStateException("Cannot execute task:"
+                            + " the task has already been executed "
+                            + "(a task can be executed only once)");
+            }
+        }
+
+        mStatus = Status.RUNNING;
+
+        onPreExecute();//onPreExecute的方法执行在execute()的调用线程。
+
+        mWorker.mParams = params;
+        exec.execute(mFuture);
+
+        return this;
+    }
+
+
+```
+
 > `onProgressUpdate()`、`onPostExecute()`等其他通过handler机制回调的方法则在主线程中执行。
-> AsyncTask 是Handler和Thread的封装，创建任务时Looper是主线程的就不影响执行过程。不过最好还是按照官方文档在主线程中执行。
+
 > AsyncTask 提供了三个构造方法，可供外部使用的只有无参的那个，具体初始化是在传参为Loop类型的构造器中。如代码，无论在哪个线程中启动，mHandler 中的Looper都是Looper.getMainLooper()。
 
 ```java
@@ -177,39 +227,21 @@ categories: [Android]
             ...
 }
 ```
-`onPreExecute`的方法执行在`execute()`的调用线程。
 
 ```java
- @MainThread
-    public final AsyncTask<Params, Progress, Result> execute(Params... params) {
-        return executeOnExecutor(sDefaultExecutor, params);
-    }
-
- @MainThread
-    public final AsyncTask<Params, Progress, Result> executeOnExecutor(Executor exec,
-            Params... params) {
-        if (mStatus != Status.PENDING) {
-            switch (mStatus) {
-                case RUNNING:
-                    throw new IllegalStateException("Cannot execute task:"
-                            + " the task is already running.");
-                case FINISHED:
-                    throw new IllegalStateException("Cannot execute task:"
-                            + " the task has already been executed "
-                            + "(a task can be executed only once)");
+ private static Handler getMainHandler() {
+        synchronized (AsyncTask.class) {
+            if (sHandler == null) {
+            // 通过handler传递值的方法都会在主线程中执行如`onProgressUpdate()`、`onPostExecute()`等
+                sHandler = new InternalHandler(Looper.getMainLooper());
             }
+            return sHandler;
         }
-
-        mStatus = Status.RUNNING;
-
-        onPreExecute();
-
-        mWorker.mParams = params;
-        exec.execute(mFuture);
-
-        return this;
     }
-
-
 ```
+
+
+
+
+
 
